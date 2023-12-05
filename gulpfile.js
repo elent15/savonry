@@ -160,6 +160,8 @@ function scriptsDocs() {
     }))
     .pipe(uglify())
     .pipe(dest('./docs/js/'))
+    .pipe(src('./dev/js/vendor.js'))
+    .pipe(dest('./docs/js/'))
 }
 
 function imagesDocs() {
