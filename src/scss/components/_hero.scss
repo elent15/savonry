@@ -1,0 +1,119 @@
+// hero
+.hero {
+  background-color: var(--gray);
+
+  &__swiper-slide {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    min-height: calc(100vh - 151px);
+    height: auto;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+
+    @media (max-width:990px) {
+      min-height: calc(100vh - 99px);
+    }
+  }
+
+  &__content {
+    padding-top: 50px;
+    padding-bottom: 50px;
+    max-width: 564px;
+    text-align: center;
+
+    @media (max-width:758px) {
+      max-width: 310px;
+    }
+
+    @media (max-width:470px) {
+      max-width: 230px;
+    }
+  }
+
+  &__text {
+    margin-bottom: 40px;
+    color: var(--white, #FFF);
+    font-size: 24px;
+    font-weight: 400;
+    line-height: normal;
+
+    @media (max-width:470px) {
+      padding-left: 8px;
+      padding-right: 8px;
+      font-size: 18px;
+    }
+  }
+
+  &__btn {
+    display: inline-block;
+    max-width: 151px;
+    width: 100%;
+  }
+
+  &__swiper-button-prev,
+  &__swiper-button-next {
+    top: 50%;
+    border-radius: 10px;
+    margin: 0;
+    width: 48px;
+    height: 120px;
+    background: rgba(255, 255, 255, 0.5);
+    backdrop-filter: blur(23px);
+    transform: translateY(-50%);
+    outline-offset: 2px;
+    outline: 1px solid transparent;
+    transition: outline-color 0.3s ease-in-out, background 0.3s ease-in-out;
+
+    &:focus-visible {
+      outline: 1px solid transparent;
+    }
+
+    &:focus {
+      outline-color: var(--black);
+    }
+
+    &:hover {
+      background: rgba(255, 255, 255, 1);
+    }
+
+    @media (max-width:470px) {
+      border-radius: 7px;
+      width: 34px;
+      height: 84px;
+      backdrop-filter: blur(16px);
+    }
+
+    & svg {
+      width: 48px;
+      height: 48px;
+
+      @media (max-width:470px) {
+        width: 33px;
+        height: 34px;
+      }
+    }
+  }
+
+  &__swiper-button-prev {
+    left: 40px;
+
+    @media (max-width:1230px) {
+      left: 20px;
+    }
+  }
+
+  &__swiper-button-next {
+    right: 40px;
+
+    @media (max-width:1230px) {
+      right: 20px;
+    }
+  }
+}
+
+.swiper-button-prev::after,
+.swiper-button-next::after {
+  display: none;
+}

@@ -1,0 +1,37 @@
+// hits
+.hits {
+  padding-top: 60px;
+  padding-bottom: 60px;
+  background-color: var(--white);
+
+  @media (max-width:990px) {
+    padding-top: 56px;
+    padding-bottom: 50px;
+  }
+
+  @media (max-width:758px) {
+    padding-top: 32px;
+    padding-bottom: 32px;
+  }
+
+  &__container {
+    text-align: center;
+  }
+
+  &__title {
+    margin-bottom: 64px;
+
+    @media (max-width:758px) {
+      margin-bottom: 34px;
+    }
+  }
+
+  &__swiper {
+    overflow: visible;
+  }
+
+  &__swiper-slide {
+    width: auto;
+    height: auto;
+  }
+}

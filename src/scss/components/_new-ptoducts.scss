@@ -1,0 +1,42 @@
+// new-products
+.new-products {
+  padding-top: 120px;
+  padding-bottom: 60px;
+  background-color: var(--white);
+
+  @media (max-width:990px) {
+    padding-top: 100px;
+    padding-bottom: 50px;
+  }
+
+  @media (max-width:758px) {
+    padding-top: 64px;
+    padding-bottom: 32px;
+  }
+
+  &__container {
+    text-align: center;
+  }
+
+  &__title {
+    margin-bottom: 64px;
+
+    @media (max-width:758px) {
+      margin-right: 34px;
+      margin-bottom: 35px;
+    }
+
+    @media (max-width:470px) {
+      margin-right: 0;
+    }
+  }
+
+  &__swiper {
+    overflow: visible;
+  }
+
+  &__swiper-slide {
+    width: auto;
+    height: auto;
+  }
+}

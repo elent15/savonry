@@ -1,0 +1,894 @@
+<header class="header">
+  <div class="header-top">
+    <div class="container header-top__container">
+      <button class="btn-reset burger" type="button" aria-label="Открыть меню">
+        <span class="burger__line"></span>
+        <span class="burger__line"></span>
+        <span class="burger__line"></span>
+      </button>
+      <div class="header-top-nav">
+        <ul class="list-reset header-top-nav-list">
+          @include('items.html')
+        </ul>
+      </div>
+      <a class="header-top__logo-link" href="#">
+        <picture>
+          <source media="(max-width:758px)" srcset="./images/svg/logo-md.svg">
+          <img src="./images/svg/logo.svg" alt="Логотип" width="170" height="54">
+        </picture>
+      </a>
+      <div class="header-top__icons">
+        <div class="header-top__left-icons">
+          <button class="btn-reset header-top__btn header-top__btn--search" type="button" aria-label="Поиск">
+            <svg>
+              <use href="./images/sprite.svg#search"></use>
+            </svg>
+          </button>
+          <a class="btn-reset header-top__btn header-top__btn--phone" href="tel:+78005052305" aria-label="Телефон">
+            <svg>
+              <use href="./images/sprite.svg#phone"></use>
+            </svg>
+          </a>
+        </div>
+        <div class="header-top__right-icons">
+          <a class="header-top__btn header-top__btn--lk" href="#" aria-label="Личный кабинет">
+            <svg>
+              <use href="./images/sprite.svg#lk"></use>
+            </svg>
+          </a>
+          <a class="header-top__btn header-top__btn--cart" href="#" aria-label="Корзина">
+            <svg>
+              <use href="./images/sprite.svg#cart"></use>
+            </svg>
+          </a>
+        </div>
+      </div>
+      <form class="header-top__search-form">
+        <label class="header-top__search-form-label">
+          <input class="header-top__search-form-input" type="text" placeholder="Поиск по каталогу">
+        </label>
+        <button class="btn-reset header-top__btn header-top__search-form-icon" type="submit" aria-label="Найти">
+          <svg>
+            <use href="./images/sprite.svg#search"></use>
+          </svg>
+        </button>
+        <button class="btn-reset header-top__search-form-btn" type="submit">
+          Закрыть
+        </button>
+      </form>
+    </div>
+  </div>
+  <div class="header-bottom">
+    <div class="container header-bottom__container">
+      <div class="header-bottom__nav">
+        <ul class="list-reset header-bottom__nav-list">
+          <li class="header__nav-item header-bottom__nav-item">
+            <button class="btn-reset header-bottom__nav-btn menu-btn-js" type="button">
+              Акции
+            </button>
+            <ul class="list-reset header__submenu">
+              <li class="header__submenu-item">
+                <a href="#" class="header__submenu-link">
+                  Антибактериальные средства
+                </a>
+              </li>
+              <li class="header__submenu-item">
+                <a href="#" class="header__submenu-link">
+                  Антицеллюлитная серия slim&sexy
+                </a>
+              </li>
+              <li class="header__submenu-item">
+                <a href="#" class="header__submenu-link">
+                  Антицеллюлитная скраб-маска
+                </a>
+              </li>
+              <li class="header__submenu-item">
+                <a href="#" class="header__submenu-link">
+                  Гель алоэ вера
+                </a>
+              </li>
+              <li class="header__submenu-item">
+                <a href="#" class="header__submenu-link">
+                  Дезодоранты
+                </a>
+              </li>
+              <li class="header__submenu-item">
+                <a href="#" class="header__submenu-link">
+                  Кремы для тела
+                </a>
+              </li>
+              <li class="header__submenu-item">
+                <a href="#" class="header__submenu-link">
+                  Массажные плитки
+                </a>
+              </li>
+              <li class="header__submenu-item">
+                <a href="#" class="header__submenu-link">
+                  Натуральные масла
+                </a>
+              </li>
+              <li class="header__submenu-item">
+                <a href="#" class="header__submenu-link">
+                  Обертывание
+                </a>
+              </li>
+              <li class="header__submenu-item">
+                <a href="#" class="header__submenu-link">
+                  Парфюмированные спреи для тела
+                </a>
+              </li>
+              <li class="header__submenu-item">
+                <a href="#" class="header__submenu-link">
+                  Скрабы для тела
+                </a>
+              </li>
+              <li class="header__submenu-item">
+                <a href="#" class="header__submenu-link">
+                  Солнцезащитные средства
+                </a>
+              </li>
+              <li class="header__submenu-item">
+                <a href="#" class="header__submenu-link">
+                  Средства для ног
+                </a>
+              </li>
+              <li class="header__submenu-item">
+                <a href="#" class="header__submenu-link">
+                  Средства для рук
+                </a>
+              </li>
+              <li class="header__submenu-item">
+                <a href="#" class="header__submenu-link">
+                  Щетки для сухого массажа
+                </a>
+              </li>
+            </ul>
+          </li>
+          <li class="header__nav-item header-bottom__nav-item">
+            <button class="btn-reset header-bottom__nav-btn menu-btn-js" type="button">
+              Новинки
+            </button>
+            <ul class="list-reset header__submenu">
+              <li class="header__submenu-item">
+                <a href="#" class="header__submenu-link">
+                  Антибактериальные средства
+                </a>
+              </li>
+              <li class="header__submenu-item">
+                <a href="#" class="header__submenu-link">
+                  Антицеллюлитная серия slim&sexy
+                </a>
+              </li>
+              <li class="header__submenu-item">
+                <a href="#" class="header__submenu-link">
+                  Антицеллюлитная скраб-маска
+                </a>
+              </li>
+              <li class="header__submenu-item">
+                <a href="#" class="header__submenu-link">
+                  Гель алоэ вера
+                </a>
+              </li>
+              <li class="header__submenu-item">
+                <a href="#" class="header__submenu-link">
+                  Дезодоранты
+                </a>
+              </li>
+              <li class="header__submenu-item">
+                <a href="#" class="header__submenu-link">
+                  Кремы для тела
+                </a>
+              </li>
+              <li class="header__submenu-item">
+                <a href="#" class="header__submenu-link">
+                  Массажные плитки
+                </a>
+              </li>
+              <li class="header__submenu-item">
+                <a href="#" class="header__submenu-link">
+                  Натуральные масла
+                </a>
+              </li>
+              <li class="header__submenu-item">
+                <a href="#" class="header__submenu-link">
+                  Обертывание
+                </a>
+              </li>
+              <li class="header__submenu-item">
+                <a href="#" class="header__submenu-link">
+                  Парфюмированные спреи для тела
+                </a>
+              </li>
+              <li class="header__submenu-item">
+                <a href="#" class="header__submenu-link">
+                  Скрабы для тела
+                </a>
+              </li>
+              <li class="header__submenu-item">
+                <a href="#" class="header__submenu-link">
+                  Солнцезащитные средства
+                </a>
+              </li>
+              <li class="header__submenu-item">
+                <a href="#" class="header__submenu-link">
+                  Средства для ног
+                </a>
+              </li>
+              <li class="header__submenu-item">
+                <a href="#" class="header__submenu-link">
+                  Средства для рук
+                </a>
+              </li>
+              <li class="header__submenu-item">
+                <a href="#" class="header__submenu-link">
+                  Щетки для сухого массажа
+                </a>
+              </li>
+            </ul>
+          </li>
+          <li class="header__nav-item header-bottom__nav-item">
+            <button class="btn-reset header-bottom__nav-btn menu-btn-js" type="button">
+              Лицо
+            </button>
+            <ul class="list-reset header__submenu">
+              <li class="header__submenu-item">
+                <a href="#" class="header__submenu-link">
+                  Антибактериальные средства
+                </a>
+              </li>
+              <li class="header__submenu-item">
+                <a href="#" class="header__submenu-link">
+                  Антицеллюлитная серия slim&sexy
+                </a>
+              </li>
+              <li class="header__submenu-item">
+                <a href="#" class="header__submenu-link">
+                  Антицеллюлитная скраб-маска
+                </a>
+              </li>
+              <li class="header__submenu-item">
+                <a href="#" class="header__submenu-link">
+                  Гель алоэ вера
+                </a>
+              </li>
+              <li class="header__submenu-item">
+                <a href="#" class="header__submenu-link">
+                  Дезодоранты
+                </a>
+              </li>
+              <li class="header__submenu-item">
+                <a href="#" class="header__submenu-link">
+                  Кремы для тела
+                </a>
+              </li>
+              <li class="header__submenu-item">
+                <a href="#" class="header__submenu-link">
+                  Массажные плитки
+                </a>
+              </li>
+              <li class="header__submenu-item">
+                <a href="#" class="header__submenu-link">
+                  Натуральные масла
+                </a>
+              </li>
+              <li class="header__submenu-item">
+                <a href="#" class="header__submenu-link">
+                  Обертывание
+                </a>
+              </li>
+              <li class="header__submenu-item">
+                <a href="#" class="header__submenu-link">
+                  Парфюмированные спреи для тела
+                </a>
+              </li>
+              <li class="header__submenu-item">
+                <a href="#" class="header__submenu-link">
+                  Скрабы для тела
+                </a>
+              </li>
+              <li class="header__submenu-item">
+                <a href="#" class="header__submenu-link">
+                  Солнцезащитные средства
+                </a>
+              </li>
+              <li class="header__submenu-item">
+                <a href="#" class="header__submenu-link">
+                  Средства для ног
+                </a>
+              </li>
+              <li class="header__submenu-item">
+                <a href="#" class="header__submenu-link">
+                  Средства для рук
+                </a>
+              </li>
+              <li class="header__submenu-item">
+                <a href="#" class="header__submenu-link">
+                  Щетки для сухого массажа
+                </a>
+              </li>
+            </ul>
+          </li>
+          <li class="header__nav-item header-bottom__nav-item">
+            <button class="btn-reset header-bottom__nav-btn menu-btn-js" type="button">
+              Ванна и душ
+            </button>
+            <ul class="list-reset header__submenu">
+              <li class="header__submenu-item">
+                <a href="#" class="header__submenu-link">
+                  Антибактериальные средства
+                </a>
+              </li>
+              <li class="header__submenu-item">
+                <a href="#" class="header__submenu-link">
+                  Антицеллюлитная серия slim&sexy
+                </a>
+              </li>
+              <li class="header__submenu-item">
+                <a href="#" class="header__submenu-link">
+                  Антицеллюлитная скраб-маска
+                </a>
+              </li>
+              <li class="header__submenu-item">
+                <a href="#" class="header__submenu-link">
+                  Гель алоэ вера
+                </a>
+              </li>
+              <li class="header__submenu-item">
+                <a href="#" class="header__submenu-link">
+                  Дезодоранты
+                </a>
+              </li>
+              <li class="header__submenu-item">
+                <a href="#" class="header__submenu-link">
+                  Кремы для тела
+                </a>
+              </li>
+              <li class="header__submenu-item">
+                <a href="#" class="header__submenu-link">
+                  Массажные плитки
+                </a>
+              </li>
+              <li class="header__submenu-item">
+                <a href="#" class="header__submenu-link">
+                  Натуральные масла
+                </a>
+              </li>
+              <li class="header__submenu-item">
+                <a href="#" class="header__submenu-link">
+                  Обертывание
+                </a>
+              </li>
+              <li class="header__submenu-item">
+                <a href="#" class="header__submenu-link">
+                  Парфюмированные спреи для тела
+                </a>
+              </li>
+              <li class="header__submenu-item">
+                <a href="#" class="header__submenu-link">
+                  Скрабы для тела
+                </a>
+              </li>
+              <li class="header__submenu-item">
+                <a href="#" class="header__submenu-link">
+                  Солнцезащитные средства
+                </a>
+              </li>
+              <li class="header__submenu-item">
+                <a href="#" class="header__submenu-link">
+                  Средства для ног
+                </a>
+              </li>
+              <li class="header__submenu-item">
+                <a href="#" class="header__submenu-link">
+                  Средства для рук
+                </a>
+              </li>
+              <li class="header__submenu-item">
+                <a href="#" class="header__submenu-link">
+                  Щетки для сухого массажа
+                </a>
+              </li>
+            </ul>
+          </li>
+          <li class="header__nav-item header-bottom__nav-item">
+            <button class="btn-reset header-bottom__nav-btn menu-btn-js" type="button">
+              Тело
+            </button>
+            <ul class="list-reset header__submenu">
+              <li class="header__submenu-item">
+                <a href="#" class="header__submenu-link">
+                  Антибактериальные средства
+                </a>
+              </li>
+              <li class="header__submenu-item">
+                <a href="#" class="header__submenu-link">
+                  Антицеллюлитная серия slim&sexy
+                </a>
+              </li>
+              <li class="header__submenu-item">
+                <a href="#" class="header__submenu-link">
+                  Антицеллюлитная скраб-маска
+                </a>
+              </li>
+              <li class="header__submenu-item">
+                <a href="#" class="header__submenu-link">
+                  Гель алоэ вера
+                </a>
+              </li>
+              <li class="header__submenu-item">
+                <a href="#" class="header__submenu-link">
+                  Дезодоранты
+                </a>
+              </li>
+              <li class="header__submenu-item">
+                <a href="#" class="header__submenu-link">
+                  Кремы для тела
+                </a>
+              </li>
+              <li class="header__submenu-item">
+                <a href="#" class="header__submenu-link">
+                  Массажные плитки
+                </a>
+              </li>
+              <li class="header__submenu-item">
+                <a href="#" class="header__submenu-link">
+                  Натуральные масла
+                </a>
+              </li>
+              <li class="header__submenu-item">
+                <a href="#" class="header__submenu-link">
+                  Обертывание
+                </a>
+              </li>
+              <li class="header__submenu-item">
+                <a href="#" class="header__submenu-link">
+                  Парфюмированные спреи для тела
+                </a>
+              </li>
+              <li class="header__submenu-item">
+                <a href="#" class="header__submenu-link">
+                  Скрабы для тела
+                </a>
+              </li>
+              <li class="header__submenu-item">
+                <a href="#" class="header__submenu-link">
+                  Солнцезащитные средства
+                </a>
+              </li>
+              <li class="header__submenu-item">
+                <a href="#" class="header__submenu-link">
+                  Средства для ног
+                </a>
+              </li>
+              <li class="header__submenu-item">
+                <a href="#" class="header__submenu-link">
+                  Средства для рук
+                </a>
+              </li>
+              <li class="header__submenu-item">
+                <a href="#" class="header__submenu-link">
+                  Щетки для сухого массажа
+                </a>
+              </li>
+            </ul>
+          </li>
+          <li class="header__nav-item header-bottom__nav-item">
+            <button class="btn-reset header-bottom__nav-btn menu-btn-js" type="button">
+              Волосы
+            </button>
+            <ul class="list-reset header__submenu header__submenu--right">
+              <li class="header__submenu-item">
+                <a href="#" class="header__submenu-link">
+                  Антибактериальные средства
+                </a>
+              </li>
+              <li class="header__submenu-item">
+                <a href="#" class="header__submenu-link">
+                  Антицеллюлитная серия slim&sexy
+                </a>
+              </li>
+              <li class="header__submenu-item">
+                <a href="#" class="header__submenu-link">
+                  Антицеллюлитная скраб-маска
+                </a>
+              </li>
+              <li class="header__submenu-item">
+                <a href="#" class="header__submenu-link">
+                  Гель алоэ вера
+                </a>
+              </li>
+              <li class="header__submenu-item">
+                <a href="#" class="header__submenu-link">
+                  Дезодоранты
+                </a>
+              </li>
+              <li class="header__submenu-item">
+                <a href="#" class="header__submenu-link">
+                  Кремы для тела
+                </a>
+              </li>
+              <li class="header__submenu-item">
+                <a href="#" class="header__submenu-link">
+                  Массажные плитки
+                </a>
+              </li>
+              <li class="header__submenu-item">
+                <a href="#" class="header__submenu-link">
+                  Натуральные масла
+                </a>
+              </li>
+              <li class="header__submenu-item">
+                <a href="#" class="header__submenu-link">
+                  Обертывание
+                </a>
+              </li>
+              <li class="header__submenu-item">
+                <a href="#" class="header__submenu-link">
+                  Парфюмированные спреи для тела
+                </a>
+              </li>
+              <li class="header__submenu-item">
+                <a href="#" class="header__submenu-link">
+                  Скрабы для тела
+                </a>
+              </li>
+              <li class="header__submenu-item">
+                <a href="#" class="header__submenu-link">
+                  Солнцезащитные средства
+                </a>
+              </li>
+              <li class="header__submenu-item">
+                <a href="#" class="header__submenu-link">
+                  Средства для ног
+                </a>
+              </li>
+              <li class="header__submenu-item">
+                <a href="#" class="header__submenu-link">
+                  Средства для рук
+                </a>
+              </li>
+              <li class="header__submenu-item">
+                <a href="#" class="header__submenu-link">
+                  Щетки для сухого массажа
+                </a>
+              </li>
+            </ul>
+          </li>
+          <li class="header__nav-item header-bottom__nav-item">
+            <button class="btn-reset header-bottom__nav-btn menu-btn-js" type="button">
+              Для него
+            </button>
+            <ul class="list-reset header__submenu header__submenu--right">
+              <li class="header__submenu-item">
+                <a href="#" class="header__submenu-link">
+                  Антибактериальные средства
+                </a>
+              </li>
+              <li class="header__submenu-item">
+                <a href="#" class="header__submenu-link">
+                  Антицеллюлитная серия slim&sexy
+                </a>
+              </li>
+              <li class="header__submenu-item">
+                <a href="#" class="header__submenu-link">
+                  Антицеллюлитная скраб-маска
+                </a>
+              </li>
+              <li class="header__submenu-item">
+                <a href="#" class="header__submenu-link">
+                  Гель алоэ вера
+                </a>
+              </li>
+              <li class="header__submenu-item">
+                <a href="#" class="header__submenu-link">
+                  Дезодоранты
+                </a>
+              </li>
+              <li class="header__submenu-item">
+                <a href="#" class="header__submenu-link">
+                  Кремы для тела
+                </a>
+              </li>
+              <li class="header__submenu-item">
+                <a href="#" class="header__submenu-link">
+                  Массажные плитки
+                </a>
+              </li>
+              <li class="header__submenu-item">
+                <a href="#" class="header__submenu-link">
+                  Натуральные масла
+                </a>
+              </li>
+              <li class="header__submenu-item">
+                <a href="#" class="header__submenu-link">
+                  Обертывание
+                </a>
+              </li>
+              <li class="header__submenu-item">
+                <a href="#" class="header__submenu-link">
+                  Парфюмированные спреи для тела
+                </a>
+              </li>
+              <li class="header__submenu-item">
+                <a href="#" class="header__submenu-link">
+                  Скрабы для тела
+                </a>
+              </li>
+              <li class="header__submenu-item">
+                <a href="#" class="header__submenu-link">
+                  Солнцезащитные средства
+                </a>
+              </li>
+              <li class="header__submenu-item">
+                <a href="#" class="header__submenu-link">
+                  Средства для ног
+                </a>
+              </li>
+              <li class="header__submenu-item">
+                <a href="#" class="header__submenu-link">
+                  Средства для рук
+                </a>
+              </li>
+              <li class="header__submenu-item">
+                <a href="#" class="header__submenu-link">
+                  Щетки для сухого массажа
+                </a>
+              </li>
+            </ul>
+          </li>
+          <li class="header__nav-item header-bottom__nav-item">
+            <button class="btn-reset header-bottom__nav-btn menu-btn-js" type="button">
+              Подарки
+            </button>
+            <ul class="list-reset header__submenu header__submenu--right">
+              <li class="header__submenu-item">
+                <a href="#" class="header__submenu-link">
+                  Антибактериальные средства
+                </a>
+              </li>
+              <li class="header__submenu-item">
+                <a href="#" class="header__submenu-link">
+                  Антицеллюлитная серия slim&sexy
+                </a>
+              </li>
+              <li class="header__submenu-item">
+                <a href="#" class="header__submenu-link">
+                  Антицеллюлитная скраб-маска
+                </a>
+              </li>
+              <li class="header__submenu-item">
+                <a href="#" class="header__submenu-link">
+                  Гель алоэ вера
+                </a>
+              </li>
+              <li class="header__submenu-item">
+                <a href="#" class="header__submenu-link">
+                  Дезодоранты
+                </a>
+              </li>
+              <li class="header__submenu-item">
+                <a href="#" class="header__submenu-link">
+                  Кремы для тела
+                </a>
+              </li>
+              <li class="header__submenu-item">
+                <a href="#" class="header__submenu-link">
+                  Массажные плитки
+                </a>
+              </li>
+              <li class="header__submenu-item">
+                <a href="#" class="header__submenu-link">
+                  Натуральные масла
+                </a>
+              </li>
+              <li class="header__submenu-item">
+                <a href="#" class="header__submenu-link">
+                  Обертывание
+                </a>
+              </li>
+              <li class="header__submenu-item">
+                <a href="#" class="header__submenu-link">
+                  Парфюмированные спреи для тела
+                </a>
+              </li>
+              <li class="header__submenu-item">
+                <a href="#" class="header__submenu-link">
+                  Скрабы для тела
+                </a>
+              </li>
+              <li class="header__submenu-item">
+                <a href="#" class="header__submenu-link">
+                  Солнцезащитные средства
+                </a>
+              </li>
+              <li class="header__submenu-item">
+                <a href="#" class="header__submenu-link">
+                  Средства для ног
+                </a>
+              </li>
+              <li class="header__submenu-item">
+                <a href="#" class="header__submenu-link">
+                  Средства для рук
+                </a>
+              </li>
+              <li class="header__submenu-item">
+                <a href="#" class="header__submenu-link">
+                  Щетки для сухого массажа
+                </a>
+              </li>
+            </ul>
+          </li>
+          <li class="header__nav-item header-bottom__nav-item">
+            <button class="btn-reset header-bottom__nav-btn menu-btn-js" type="button">
+              Серии
+            </button>
+            <ul class="list-reset header__submenu header__submenu--right">
+              <li class="header__submenu-item">
+                <a href="#" class="header__submenu-link">
+                  Антибактериальные средства
+                </a>
+              </li>
+              <li class="header__submenu-item">
+                <a href="#" class="header__submenu-link">
+                  Антицеллюлитная серия slim&sexy
+                </a>
+              </li>
+              <li class="header__submenu-item">
+                <a href="#" class="header__submenu-link">
+                  Антицеллюлитная скраб-маска
+                </a>
+              </li>
+              <li class="header__submenu-item">
+                <a href="#" class="header__submenu-link">
+                  Гель алоэ вера
+                </a>
+              </li>
+              <li class="header__submenu-item">
+                <a href="#" class="header__submenu-link">
+                  Дезодоранты
+                </a>
+              </li>
+              <li class="header__submenu-item">
+                <a href="#" class="header__submenu-link">
+                  Кремы для тела
+                </a>
+              </li>
+              <li class="header__submenu-item">
+                <a href="#" class="header__submenu-link">
+                  Массажные плитки
+                </a>
+              </li>
+              <li class="header__submenu-item">
+                <a href="#" class="header__submenu-link">
+                  Натуральные масла
+                </a>
+              </li>
+              <li class="header__submenu-item">
+                <a href="#" class="header__submenu-link">
+                  Обертывание
+                </a>
+              </li>
+              <li class="header__submenu-item">
+                <a href="#" class="header__submenu-link">
+                  Парфюмированные спреи для тела
+                </a>
+              </li>
+              <li class="header__submenu-item">
+                <a href="#" class="header__submenu-link">
+                  Скрабы для тела
+                </a>
+              </li>
+              <li class="header__submenu-item">
+                <a href="#" class="header__submenu-link">
+                  Солнцезащитные средства
+                </a>
+              </li>
+              <li class="header__submenu-item">
+                <a href="#" class="header__submenu-link">
+                  Средства для ног
+                </a>
+              </li>
+              <li class="header__submenu-item">
+                <a href="#" class="header__submenu-link">
+                  Средства для рук
+                </a>
+              </li>
+              <li class="header__submenu-item">
+                <a href="#" class="header__submenu-link">
+                  Щетки для сухого массажа
+                </a>
+              </li>
+            </ul>
+          </li>
+          <li class="header__nav-item header-bottom__nav-item">
+            <button class="btn-reset header-bottom__nav-btn menu-btn-js" type="button">
+              Аксессуары
+            </button>
+            <ul class="list-reset header__submenu header__submenu--right">
+              <li class="header__submenu-item">
+                <a href="#" class="header__submenu-link">
+                  Антибактериальные средства
+                </a>
+              </li>
+              <li class="header__submenu-item">
+                <a href="#" class="header__submenu-link">
+                  Антицеллюлитная серия slim&sexy
+                </a>
+              </li>
+              <li class="header__submenu-item">
+                <a href="#" class="header__submenu-link">
+                  Антицеллюлитная скраб-маска
+                </a>
+              </li>
+              <li class="header__submenu-item">
+                <a href="#" class="header__submenu-link">
+                  Гель алоэ вера
+                </a>
+              </li>
+              <li class="header__submenu-item">
+                <a href="#" class="header__submenu-link">
+                  Дезодоранты
+                </a>
+              </li>
+              <li class="header__submenu-item">
+                <a href="#" class="header__submenu-link">
+                  Кремы для тела
+                </a>
+              </li>
+              <li class="header__submenu-item">
+                <a href="#" class="header__submenu-link">
+                  Массажные плитки
+                </a>
+              </li>
+              <li class="header__submenu-item">
+                <a href="#" class="header__submenu-link">
+                  Натуральные масла
+                </a>
+              </li>
+              <li class="header__submenu-item">
+                <a href="#" class="header__submenu-link">
+                  Обертывание
+                </a>
+              </li>
+              <li class="header__submenu-item">
+                <a href="#" class="header__submenu-link">
+                  Парфюмированные спреи для тела
+                </a>
+              </li>
+              <li class="header__submenu-item">
+                <a href="#" class="header__submenu-link">
+                  Скрабы для тела
+                </a>
+              </li>
+              <li class="header__submenu-item">
+                <a href="#" class="header__submenu-link">
+                  Солнцезащитные средства
+                </a>
+              </li>
+              <li class="header__submenu-item">
+                <a href="#" class="header__submenu-link">
+                  Средства для ног
+                </a>
+              </li>
+              <li class="header__submenu-item">
+                <a href="#" class="header__submenu-link">
+                  Средства для рук
+                </a>
+              </li>
+              <li class="header__submenu-item">
+                <a href="#" class="header__submenu-link">
+                  Щетки для сухого массажа
+                </a>
+              </li>
+            </ul>
+          </li>
+          <li>
+            <ul class="list-reset header-top-nav-list header-top-nav-list--hidden">
+              @include('items.html')
+            </ul>
+          </li>
+        </ul>
+      </div>
+    </div>
+  </div>
+</header>

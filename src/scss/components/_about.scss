@@ -1,0 +1,137 @@
+// about
+.about {
+  padding-top: 60px;
+  padding-bottom: 120px;
+  background-color: var(--white);
+
+  @media (max-width:990px) {
+    padding-top: 50px;
+    padding-bottom: 100px;
+  }
+
+  @media (max-width:758px) {
+    padding-top: 32px;
+    padding-bottom: 64px;
+  }
+
+  &__container {
+    text-align: center;
+  }
+
+  &__title {
+    margin-bottom: 51px;
+
+    @media (max-width:1230px) {
+      margin-bottom: 53px;
+    }
+
+    @media (max-width:758px) {
+      margin-bottom: 32px;
+    }
+  }
+
+  &__body {
+    padding-left: max(15px, calc((100% - 1264px) / 2));
+    padding-right: max(15px, calc((100% - 1200px) / 2));
+
+    @media (max-width:1230px) {
+      padding-left: 0;
+      padding-right: 0;
+    }
+  }
+
+  &__body-container {
+    display: flex;
+    justify-content: space-between;
+    padding: 0;
+
+    @media (max-width:1230px) {
+      padding-left: 15px;
+      padding-right: 15px;
+    }
+
+    @media (max-width:758px) {
+      flex-direction: column;
+    }
+  }
+
+  &__img-block {
+    width: 622px;
+    height: 526px;
+
+    @media (max-width:1230px) {
+      width: 430px;
+      height: 352px;
+    }
+
+    @media (max-width:990px) {
+      width: 354px;
+      height: 446px;
+    }
+
+    @media (max-width:758px) {
+      width: 440px;
+      height: 345px;
+    }
+
+    @media (max-width:470px) {
+      width: min(100%, 320px);
+      height: 251px;
+    }
+  }
+
+  &__img {
+    width: 100%;
+    height: 100%;
+  }
+
+  &__content {
+    padding-top: 29px;
+    max-width: 488px;
+
+    @media (max-width:1230px) {
+      padding-top: 20px;
+      max-width: 470px;
+    }
+
+    @media (max-width:990px) {
+      padding-top: 16px;
+      max-width: 335px;
+    }
+
+    @media (max-width:758px) {
+      padding-top: 32px;
+      max-width: 100%;
+    }
+  }
+
+  &__content-text {
+    margin-bottom: 32px;
+    color: var(--black);
+    text-align: left;
+  }
+
+  &__content-text--bg {
+    font-size: 24px;
+    font-weight: 400;
+    line-height: normal;
+
+    @media (max-width:470px) {
+      font-size: 18px;
+    }
+  }
+
+  &__content-text--sm {
+    font-size: 16px;
+    line-height: 150%;
+  }
+
+  &__content-btn {
+    max-width: 196px;
+    width: 100%;
+
+    @media (max-width:758px) {
+      max-width: 100%;
+    }
+  }
+}
