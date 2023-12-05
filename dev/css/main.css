@@ -283,11 +283,12 @@ a {
     display: none;
   }
 }
-.header-top-nav-list--hidden {
+
+.header-top-nav-links-hidden {
   display: none;
 }
 @media (max-width: 990px) {
-  .header-top-nav-list--hidden {
+  .header-top-nav-links-hidden {
     display: block;
   }
 }
