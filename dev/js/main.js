@@ -96,6 +96,19 @@ const menu = () => {
 
 menu();
 
+const order = () => {
+  const orderBtn = document.querySelector('.cart__order-btn');
+  const order = document.querySelector('.order');
+
+  if (order) {
+    orderBtn.addEventListener('click', () => {
+      order.classList.add('order--active');
+    });
+  }
+}
+
+order();
+
 // search-form
 const search = () => {
   const searchBtn = document.querySelector('.header-top__btn--search');
@@ -140,4 +153,17 @@ new Swiper('.hits__swiper', {
   spaceBetween: 20,
   slidesPerView: 'auto',
   keyboard: true
+});
+
+new Swiper('.offers__swiper', {
+  spaceBetween: 20,
+  keyboard: true,
+  breakpoints: {
+    320: {
+      slidesPerView: 'auto',
+    },
+    1231: {
+      slidesPerView: 4,
+    }
+  }
 });

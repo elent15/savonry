@@ -18,3 +18,16 @@ new Swiper('.hits__swiper', {
   slidesPerView: 'auto',
   keyboard: true
 });
+
+new Swiper('.offers__swiper', {
+  spaceBetween: 20,
+  keyboard: true,
+  breakpoints: {
+    320: {
+      slidesPerView: 'auto',
+    },
+    1231: {
+      slidesPerView: 4,
+    }
+  }
+});

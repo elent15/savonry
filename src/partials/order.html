@@ -1,0 +1,161 @@
+<section class="order">
+  <div class="container">
+    <h3 class="third-title order__title">
+      Оформление заказа
+    </h3>
+    <form class="order__form">
+      <h4 class="fourth-title order__form-title">
+        Контактные данные
+      </h4>
+      <div class="order__form-contact">
+        <label class="order__form-contact-label">
+          <input class="input order__form-contact-input" type="text" placeholder="Имя">
+        </label>
+        <label class="order__form-contact-label">
+          <input class="input order__form-contact-input" type="text" placeholder="Фамилия">
+        </label>
+        <label class="order__form-contact-label">
+          <input class="input order__form-contact-input" type="email" placeholder="E-mail">
+        </label>
+        <label class="order__form-contact-label">
+          <input class="input order__form-contact-input" type="text" placeholder="Дата рождения">
+        </label>
+        <label class="order__form-contact-label">
+          <input class="input order__form-contact-input" type="text" placeholder="Город">
+        </label>
+        <label class="order__form-contact-label">
+          <input class="input order__form-contact-input" type="text" placeholder="Адрес">
+        </label>
+        <label class="order__form-contact-label">
+          <input class="input order__form-contact-input" type="text" placeholder="Индекс">
+        </label>
+      </div>
+      <h4 class="fourth-title order__form-title">
+        Вы можете оставить свой комментарий
+      </h4>
+      <textarea class="input order__form-textarea" placeholder="Комментарий к заказу"></textarea>
+      <div class="order__form-block">
+        <div class="order__form-payment">
+          <h4 class="fourth-title order__form-title">
+            Способ оплаты
+          </h4>
+          <ul class="list-reset order__form-block-list">
+            <li class="order__form-block-item">
+              <label class="text order__form-block-label">
+                <input class="order__form-block-radio" type="radio" name="payment" checked>
+                <span class="order__form-block-radio-span"></span>
+                Оплата наличными
+              </label>
+            </li>
+            <li class="order__form-block-item">
+              <label class="text order__form-block-label">
+                <input class="order__form-block-radio" type="radio" name="payment">
+                <span class="order__form-block-radio-span"></span>
+                Оплата картами Visa/MasterCard онлайн
+              </label>
+            </li>
+            <li class="order__form-block-item">
+              <label class="text order__form-block-label">
+                <input class="order__form-block-radio" type="radio" name="payment">
+                <span class="order__form-block-radio-span"></span>
+                Оплата квитанцией или банковский перевод
+              </label>
+            </li>
+          </ul>
+        </div>
+        <div class="order__form-delivery">
+          <h4 class="fourth-title order__form-title">
+            Способ доставки
+          </h4>
+          <ul class="list-reset order__form-block-list">
+            <li class="order__form-block-item">
+              <label class="text order__form-block-label">
+                <input class="order__form-block-radio" type="radio" name="delivery" checked>
+                <span class="order__form-block-radio-span"></span>
+                Курьером по Санкт-Петербургу -300 руб.
+              </label>
+            </li>
+            <li class="order__form-block-item">
+              <label class="text order__form-block-label">
+                <input class="order__form-block-radio" type="radio" name="delivery">
+                <span class="order__form-block-radio-span"></span>
+                CDEK До пункта выдачи заказов -300 руб
+              </label>
+            </li>
+            <li class="order__form-block-item">
+              <label class="text order__form-block-label">
+                <input class="order__form-block-radio" type="radio" name="delivery">
+                <span class="order__form-block-radio-span"></span>
+                Курьерской службой по России -350 руб.
+              </label>
+            </li>
+            <li class="order__form-block-item">
+              <label class="text order__form-block-label">
+                <input class="order__form-block-radio" type="radio" name="delivery">
+                <span class="order__form-block-radio-span"></span>
+                Почтой России -250 руб.
+              </label>
+            </li>
+          </ul>
+        </div>
+      </div>
+      <h4 class="fourth-title order__form-title order__form-confirmation-title">
+        Подтверждение заказа
+      </h4>
+      <div class="order__form-confirmation">
+        <ul class="list-reset order__form-confirmation-list">
+          <li class="order__form-confirmation-item">
+            <span class="order__form-confirmation-span">
+              Товаров:
+            </span>
+            <span class="order__form-confirmation-span">
+              3 шт
+            </span>
+          </li>
+          <li class="order__form-confirmation-item">
+            <span class="order__form-confirmation-span">
+              Сумма заказа:
+            </span>
+            <span class="order__form-confirmation-span">
+              1 690 ₽
+            </span>
+          </li>
+          <li class="order__form-confirmation-item">
+            <span class="order__form-confirmation-span">
+              Доставка:
+            </span>
+            <span class="order__form-confirmation-span">
+              300 ₽
+            </span>
+          </li>
+        </ul>
+        <div class="order__form-confirmation-total">
+          <div class="order__form-confirmation-total-top">
+            <span class="order__form-confirmation-total-span">
+              Итого:
+            </span>
+            <span class="order__form-confirmation-total-span">
+              1 990 ₽
+            </span>
+          </div>
+          <div class="order__form-confirmation-total-bottom">
+            <button class="btn-reset btn primary-btn order__form-confirmation-total-btn" type="submit">
+              Оплатить
+            </button>
+            <p class="order__form-confirmation-total-info">
+              Нажимая продолжить я&nbsp;даю своё согласие на&nbsp;
+              <a class="link" href="#">
+                обработку персональных данных
+              </a>
+              в&nbsp;соответствии
+              с
+              <a class="link" href="#">
+                Политикой конфиденциальности
+              </a>
+            </p>
+          </div>
+        </div>
+      </div>
+    </form>
+  </div>
+</section>

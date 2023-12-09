@@ -4,7 +4,7 @@
 @import "fonts";
 @import "settings";
 
-// подключения компонентов главной страницы
+// подключения компонентов главной страницы (index.html)
 @import "./components/header";
 @import "./components/hero";
 @import "./components/new-ptoducts";
@@ -12,3 +12,11 @@
 @import "./components/hits";
 @import "./components/about";
 @import "./components/footer";
+
+// подключения компонентов страницы корзины (cart.html)
+@import "./components/breadcrumbs";
+@import "./components/cart";
+@import "./components/order";
+@import "./components/offers";
+
+// подключения компонентов страницы ()
