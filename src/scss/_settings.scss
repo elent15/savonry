@@ -44,6 +44,10 @@ a {
   text-decoration: none;
 }
 
+p {
+  margin: 0;
+}
+
 .btn-reset {
   border: none;
   padding: 0;
@@ -120,6 +124,83 @@ a {
   }
 }
 
+.account {
+  padding-top: 3px;
+  padding-bottom: 120px;
+  background-color: var(--white);
+
+  @media (max-width:1230px) {
+    padding-top: 0;
+    padding-bottom: 121px;
+  }
+
+  @media (max-width:990px) {
+    padding-bottom: 100px;
+  }
+
+  @media (max-width:758px) {
+    padding-bottom: 64px;
+  }
+
+  &-profile {
+    & .account-sidebar__link--lk {
+      color: var(--gray);
+
+      & svg {
+        fill: var(--gray);
+      }
+    }
+  }
+
+  &-password {
+    & .account-sidebar__link--lock {
+      color: var(--gray);
+
+      & svg {
+        fill: var(--gray);
+      }
+    }
+  }
+
+  &-history {
+    & .account-sidebar__link--cart {
+      color: var(--gray);
+
+      & svg {
+        fill: var(--gray);
+      }
+    }
+  }
+
+  &-mailing {
+    & .account-sidebar__link--mail {
+      color: var(--gray);
+
+      & svg {
+        fill: var(--gray);
+      }
+    }
+  }
+
+  &__container {
+    display: flex;
+    gap: 324px;
+
+    @media (max-width:1230px) {
+      gap: 63px;
+    }
+
+    @media (max-width:990px) {
+      gap: 65px;
+    }
+
+    @media (max-width:758px) {
+      flex-direction: column;
+      gap: 48px;
+    }
+  }
+}
+
 .stop-scroll {
   position: fixed;
   left: 0;
@@ -192,6 +273,10 @@ a {
 }
 
 .transparent-btn {
+  color: var(--gray);
+  font-size: 16px;
+  font-weight: 300;
+  line-height: 150%;
   background-color: transparent;
   outline-offset: 2px;
   outline: 1px solid transparent;
@@ -207,6 +292,29 @@ a {
 
   &:hover {
     color: var(--white);
+    background-color: var(--black);
+  }
+}
+
+.svg-btn {
+  stroke: var(--gray);
+  background-color: transparent;
+  outline: 1px solid transparent;
+  outline-offset: 2px;
+  transition: outline-color 0.3s ease-in-out, background-color 0.3s ease-in-out, stroke 0.3s ease-in-out, stroke-width 0.3s ease-in-out;
+
+  &:focus-visible {
+    outline-style: solid;
+  }
+
+  &:focus {
+    stroke-width: 2px;
+    outline-color: var(--black);
+  }
+
+  &:hover {
+    stroke: var(--white);
+    stroke-width: 2px;
     background-color: var(--black);
   }
 }
@@ -353,7 +461,6 @@ a {
 // links
 .link {
   color: var(--black);
-  text-decoration-line: underline;
   background-color: transparent;
   outline-offset: 2px;
   outline: 1px solid transparent;
@@ -366,6 +473,29 @@ a {
   &:hover {
     color: var(--white);
     background-color: var(--black);
+
+    & svg {
+      fill: var(--white);
+    }
+  }
+
+  &--underline {
+    text-decoration-line: underline;
+  }
+}
+
+.img-link {
+  outline: 1px solid transparent;
+  transform: translateY(0);
+  transition: outline-color 0.3s ease-in-out, transform 0.3s ease-in-out;
+
+  &:focus {
+    outline-color: var(--black);
+  }
+
+  &:hover {
+    transform: translateY(-5px);
+    outline-color: transparent;
   }
 }
 
@@ -470,6 +600,7 @@ a {
 
 // forms
 .input {
+  border-radius: 5px;
   border: 1px solid var(--light-grey);
   color: var(--black);
   font-size: 16px;
@@ -505,5 +636,67 @@ a {
     &::placeholder {
       color: var(--black);
     }
+  }
+}
+
+.radio-label {
+  position: relative;
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  color: var(--black);
+  cursor: pointer;
+}
+
+.radio-input {
+  position: absolute;
+  z-index: -1;
+  opacity: 0;
+
+  &:focus+.radio-input-span {
+    border-color: var(--black);
+    outline-color: var(--black);
+  }
+
+  &:hover+.radio-input-span {
+    border-color: var(--gray);
+    outline-color: var(--gray);
+  }
+
+  &:checked+.radio-input-span {
+    border-color: var(--black);
+    background-color: var(--black);
+  }
+
+  &:checked+.radio-input-span::before {
+    transform: translate(-50%, -50%) scale(1);
+  }
+}
+
+.radio-input-span {
+  position: relative;
+  flex-shrink: 0;
+  display: inline-block;
+  border: 1px solid var(--gray);
+  border-radius: 50%;
+  width: 24px;
+  height: 24px;
+  outline-offset: 2px;
+  outline: 1px solid transparent;
+  background-color: var(--white);
+  transition: border-color 0.3s ease-in-out, background-color 0.3s ease-in-out, outline-color 0.3s ease-in-out;
+
+  &::before {
+    content: "";
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    display: inline-block;
+    border-radius: 50%;
+    width: 6px;
+    height: 6px;
+    transform: translate(-50%, -50%) scale(0);
+    background-color: var(--white);
+    transition: transform 0.3s ease-in-out;
   }
 }

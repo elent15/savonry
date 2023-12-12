@@ -120,68 +120,6 @@
     margin-bottom: 16px;
   }
 
-  &__form-block-label {
-    position: relative;
-    display: flex;
-    align-items: center;
-    gap: 10px;
-    color: var(--black);
-    cursor: pointer;
-  }
-
-  &__form-block-radio {
-    position: absolute;
-    z-index: -1;
-    opacity: 0;
-
-    &:focus+.order__form-block-radio-span {
-      border-color: var(--black);
-      outline-color: var(--black);
-    }
-
-    &:hover+.order__form-block-radio-span {
-      border-color: var(--gray);
-      outline-color: var(--gray);
-    }
-
-    &:checked+.order__form-block-radio-span {
-      border-color: var(--black);
-      background-color: var(--black);
-    }
-
-    &:checked+.order__form-block-radio-span::before {
-      transform: translate(-50%, -50%) scale(1);
-    }
-  }
-
-  &__form-block-radio-span {
-    position: relative;
-    flex-shrink: 0;
-    display: inline-block;
-    border: 1px solid var(--gray);
-    border-radius: 50%;
-    width: 24px;
-    height: 24px;
-    outline-offset: 2px;
-    outline: 1px solid transparent;
-    background-color: var(--white);
-    transition: border-color 0.3s ease-in-out, background-color 0.3s ease-in-out, outline-color 0.3s ease-in-out;
-
-    &::before {
-      content: "";
-      position: absolute;
-      top: 50%;
-      left: 50%;
-      display: inline-block;
-      border-radius: 50%;
-      width: 6px;
-      height: 6px;
-      transform: translate(-50%, -50%) scale(0);
-      background-color: var(--white);
-      transition: transform 0.3s ease-in-out;
-    }
-  }
-
   &__form-delivery {}
 
   &__form-confirmation-title {

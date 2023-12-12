@@ -1,0 +1,111 @@
+<!-- модальное окно "Вход" -->
+<div class="modal" id="modal-entrance">
+  <div class="modal__bg">
+    <div class="modal__body">
+      <button class="btn-reset svg-btn modal__close-btn">
+        <svg>
+          <use xlink:href="./images/sprite.svg#cross"></use>
+        </svg>
+      </button>
+      <div class="modal__titles-block">
+        <h3 class="third-title modal__title">
+          <button class="btn-reset modal__title-btn" type="button" data-modal="modal-reg">
+            Регистрация
+          </button>
+        </h3>
+        <h3 class="third-title modal__title">
+          Вход
+        </h3>
+      </div>
+      <form class="modal__form">
+        <label class="modal__label">
+          <input class="input modal__form-input" type="email" placeholder="E-mail">
+        </label>
+        <label class="modal__label">
+          <input class="input modal__form-input" type="password" placeholder="Пароль">
+        </label>
+        <a class="btn primary-btn modal__form-link btn-js" href="./account-profile.html">
+          Продолжить
+        </a>
+        <button class="btn-reset transparent-btn modal__form-btn" type="button" data-modal="modal-recovery">
+          Забыли пароль?
+        </button>
+      </form>
+    </div>
+  </div>
+</div>
+
+<!-- модальное окно "Забыли пароль?" -->
+<div class="modal" id="modal-recovery">
+  <div class="modal__bg">
+    <div class="modal__body">
+      <button class="btn-reset svg-btn modal__close-btn">
+        <svg>
+          <use xlink:href="./images/sprite.svg#cross"></use>
+        </svg>
+      </button>
+      <div class="modal__titles-block">
+        <h3 class="third-title modal__title">
+          Забыли пароль?
+        </h3>
+      </div>
+      <p class="modal__text">
+        Введите E-Mail Вашей учетной записи. Нажмите кнопку Вперед, чтобы получить пароль по электронной почте.
+      </p>
+      <form class="modal__form">
+        <label class="modal__label">
+          <input class="input modal__form-input" type="email" placeholder="E-mail">
+        </label>
+        <button class="btn-reset btn primary-btn modal__form-link" type="button" data-modal="modal-entrance">
+          Продолжить
+        </button>
+      </form>
+    </div>
+  </div>
+</div>
+
+<!-- модальное окно "Регистрация" -->
+<div class="modal" id="modal-reg">
+  <div class="modal__bg">
+    <div class="modal__body">
+      <button class="btn-reset svg-btn modal__close-btn">
+        <svg>
+          <use xlink:href="./images/sprite.svg#cross"></use>
+        </svg>
+      </button>
+      <div class="modal__titles-block">
+        <h3 class="third-title modal__title">
+          Регистрация
+        </h3>
+        <h3 class="third-title modal__title">
+          <button class="btn-reset modal__title-btn" type="button" data-modal="modal-entrance">
+            Вход
+          </button>
+        </h3>
+      </div>
+      <form class="modal__form">
+        <label class="modal__label">
+          <input class="input modal__form-input" type="text" placeholder="Имя">
+        </label>
+        <label class="modal__label">
+          <input class="input modal__form-input" type="text" placeholder="Фамилия">
+        </label>
+        <label class="modal__label">
+          <input class="input modal__form-input" type="email" placeholder="E-mail">
+        </label>
+        <label class="modal__label">
+          <input class="input modal__form-input" type="tel" placeholder="+ 7 (999) 999-99-99">
+        </label>
+        <label class="modal__label">
+          <input class="input modal__form-input" type="password" placeholder="Пароль">
+        </label>
+        <label class="modal__label">
+          <input class="input modal__form-input" type="password" placeholder="Повторите пароль">
+        </label>
+        <button class="btn-reset btn primary-btn modal__form-link" type="button" data-modal="modal-entrance">
+          Продолжить
+        </button>
+      </form>
+    </div>
+  </div>
+</div>

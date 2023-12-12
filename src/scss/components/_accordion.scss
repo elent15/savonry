@@ -1,0 +1,15 @@
+// accordion
+.accordion {
+  &--active {
+    & .history__accordion-content {
+      opacity: 1;
+      visibility: visible;
+      max-height: 100%;
+      background-color: var(--white);
+    }
+
+    & .history__accordion-trigger svg {
+      transform: rotate(180deg);
+    }
+  }
+}

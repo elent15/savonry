@@ -87,7 +87,7 @@
           </a>
         </div>
         <div class="header-top__right-icons">
-          <a class="header-top__btn header-top__btn--lk" href="#" aria-label="Личный кабинет">
+          <a class="header-top__btn header-top__btn--lk" href="#" aria-label="Личный кабинет" data-modal="modal-entrance">
             <svg>
               <use href="./images/sprite.svg#lk"></use>
             </svg>
@@ -101,7 +101,7 @@
       </div>
       <form class="header-top__search-form">
         <label class="header-top__search-form-label">
-          <input class="header-top__search-form-input" type="text" placeholder="Поиск по каталогу">
+          <input class="input header-top__search-form-input" type="text" placeholder="Поиск по каталогу">
         </label>
         <button class="btn-reset header-top__btn header-top__search-form-icon" type="submit" aria-label="Найти">
           <svg>
@@ -987,6 +987,118 @@
       </div>
     </div>
   </div>
+  <!-- модальное окно "Вход" -->
+<div class="modal" id="modal-entrance">
+  <div class="modal__bg">
+    <div class="modal__body">
+      <button class="btn-reset svg-btn modal__close-btn">
+        <svg>
+          <use xlink:href="./images/sprite.svg#cross"></use>
+        </svg>
+      </button>
+      <div class="modal__titles-block">
+        <h3 class="third-title modal__title">
+          <button class="btn-reset modal__title-btn" type="button" data-modal="modal-reg">
+            Регистрация
+          </button>
+        </h3>
+        <h3 class="third-title modal__title">
+          Вход
+        </h3>
+      </div>
+      <form class="modal__form">
+        <label class="modal__label">
+          <input class="input modal__form-input" type="email" placeholder="E-mail">
+        </label>
+        <label class="modal__label">
+          <input class="input modal__form-input" type="password" placeholder="Пароль">
+        </label>
+        <a class="btn primary-btn modal__form-link btn-js" href="./account-profile.html">
+          Продолжить
+        </a>
+        <button class="btn-reset transparent-btn modal__form-btn" type="button" data-modal="modal-recovery">
+          Забыли пароль?
+        </button>
+      </form>
+    </div>
+  </div>
+</div>
+
+<!-- модальное окно "Забыли пароль?" -->
+<div class="modal" id="modal-recovery">
+  <div class="modal__bg">
+    <div class="modal__body">
+      <button class="btn-reset svg-btn modal__close-btn">
+        <svg>
+          <use xlink:href="./images/sprite.svg#cross"></use>
+        </svg>
+      </button>
+      <div class="modal__titles-block">
+        <h3 class="third-title modal__title">
+          Забыли пароль?
+        </h3>
+      </div>
+      <p class="modal__text">
+        Введите E-Mail Вашей учетной записи. Нажмите кнопку Вперед, чтобы получить пароль по электронной почте.
+      </p>
+      <form class="modal__form">
+        <label class="modal__label">
+          <input class="input modal__form-input" type="email" placeholder="E-mail">
+        </label>
+        <button class="btn-reset btn primary-btn modal__form-link" type="button" data-modal="modal-entrance">
+          Продолжить
+        </button>
+      </form>
+    </div>
+  </div>
+</div>
+
+<!-- модальное окно "Регистрация" -->
+<div class="modal" id="modal-reg">
+  <div class="modal__bg">
+    <div class="modal__body">
+      <button class="btn-reset svg-btn modal__close-btn">
+        <svg>
+          <use xlink:href="./images/sprite.svg#cross"></use>
+        </svg>
+      </button>
+      <div class="modal__titles-block">
+        <h3 class="third-title modal__title">
+          Регистрация
+        </h3>
+        <h3 class="third-title modal__title">
+          <button class="btn-reset modal__title-btn" type="button" data-modal="modal-entrance">
+            Вход
+          </button>
+        </h3>
+      </div>
+      <form class="modal__form">
+        <label class="modal__label">
+          <input class="input modal__form-input" type="text" placeholder="Имя">
+        </label>
+        <label class="modal__label">
+          <input class="input modal__form-input" type="text" placeholder="Фамилия">
+        </label>
+        <label class="modal__label">
+          <input class="input modal__form-input" type="email" placeholder="E-mail">
+        </label>
+        <label class="modal__label">
+          <input class="input modal__form-input" type="tel" placeholder="+ 7 (999) 999-99-99">
+        </label>
+        <label class="modal__label">
+          <input class="input modal__form-input" type="password" placeholder="Пароль">
+        </label>
+        <label class="modal__label">
+          <input class="input modal__form-input" type="password" placeholder="Повторите пароль">
+        </label>
+        <button class="btn-reset btn primary-btn modal__form-link" type="button" data-modal="modal-entrance">
+          Продолжить
+        </button>
+      </form>
+    </div>
+  </div>
+</div>
+
 </header>
 
     <main class="main">
@@ -1017,7 +1129,7 @@
         </button>
         <ul class="list-reset cart__products-list">
           <li class="cart__products-item">
-            <a class="cart__products-img-link" href="#">
+            <a class="img-link cart__products-img-link" href="#">
               <picture>
                 <source srcset="./images/cart-1.webp" type="image/webp">
                 <img src="./images/cart-1.jpg" alt="Изображение товара" width="112"
@@ -1050,14 +1162,14 @@
                 455&nbsp;₽
               </span>
             </div>
-            <button class="btn-reset cart__products-delete-btn" aria-label="Удалить товар из корзины">
+            <button class="btn-reset svg-btn cart__products-delete-btn" aria-label="Удалить товар из корзины">
               <svg>
                 <use href="./images/sprite.svg#delete"></use>
               </svg>
             </button>
           </li>
           <li class="cart__products-item">
-            <a class="cart__products-img-link" href="#">
+            <a class="img-link cart__products-img-link" href="#">
               <picture>
                 <source srcset="./images/cart-2.webp" type="image/webp">
                 <img src="./images/cart-2.jpg" alt="Изображение товара" width="112"
@@ -1088,14 +1200,14 @@
                 495&nbsp;₽
               </span>
             </div>
-            <button class="btn-reset cart__products-delete-btn" aria-label="Удалить товар из корзины">
+            <button class="btn-reset svg-btn cart__products-delete-btn" aria-label="Удалить товар из корзины">
               <svg>
                 <use href="./images/sprite.svg#delete"></use>
               </svg>
             </button>
           </li>
           <li class="cart__products-item">
-            <a class="cart__products-img-link" href="#">
+            <a class="img-link cart__products-img-link" href="#">
               <picture>
                 <source srcset="./images/cart-3.webp" type="image/webp">
                 <img src="./images/cart-3.jpg" alt="Изображение товара" width="112"
@@ -1127,7 +1239,7 @@
                 740&nbsp;₽
               </span>
             </div>
-            <button class="btn-reset cart__products-delete-btn" aria-label="Удалить товар из корзины">
+            <button class="btn-reset svg-btn cart__products-delete-btn" aria-label="Удалить товар из корзины">
               <svg>
                 <use href="./images/sprite.svg#delete"></use>
               </svg>
@@ -1225,23 +1337,23 @@
           </h4>
           <ul class="list-reset order__form-block-list">
             <li class="order__form-block-item">
-              <label class="text order__form-block-label">
-                <input class="order__form-block-radio" type="radio" name="payment" checked>
-                <span class="order__form-block-radio-span"></span>
+              <label class="text radio-label">
+                <input class="radio-input" type="radio" name="payment" checked>
+                <span class="radio-input-span"></span>
                 Оплата наличными
               </label>
             </li>
             <li class="order__form-block-item">
-              <label class="text order__form-block-label">
-                <input class="order__form-block-radio" type="radio" name="payment">
-                <span class="order__form-block-radio-span"></span>
+              <label class="text radio-label">
+                <input class="radio-input" type="radio" name="payment">
+                <span class="radio-input-span"></span>
                 Оплата картами Visa/MasterCard онлайн
               </label>
             </li>
             <li class="order__form-block-item">
-              <label class="text order__form-block-label">
-                <input class="order__form-block-radio" type="radio" name="payment">
-                <span class="order__form-block-radio-span"></span>
+              <label class="text radio-label">
+                <input class="radio-input" type="radio" name="payment">
+                <span class="radio-input-span"></span>
                 Оплата квитанцией или банковский перевод
               </label>
             </li>
@@ -1253,30 +1365,30 @@
           </h4>
           <ul class="list-reset order__form-block-list">
             <li class="order__form-block-item">
-              <label class="text order__form-block-label">
-                <input class="order__form-block-radio" type="radio" name="delivery" checked>
-                <span class="order__form-block-radio-span"></span>
+              <label class="text radio-label">
+                <input class="radio-input" type="radio" name="delivery" checked>
+                <span class="radio-input-span"></span>
                 Курьером по Санкт-Петербургу -300 руб.
               </label>
             </li>
             <li class="order__form-block-item">
-              <label class="text order__form-block-label">
-                <input class="order__form-block-radio" type="radio" name="delivery">
-                <span class="order__form-block-radio-span"></span>
+              <label class="text radio-label">
+                <input class="radio-input" type="radio" name="delivery">
+                <span class="radio-input-span"></span>
                 CDEK До пункта выдачи заказов -300 руб
               </label>
             </li>
             <li class="order__form-block-item">
-              <label class="text order__form-block-label">
-                <input class="order__form-block-radio" type="radio" name="delivery">
-                <span class="order__form-block-radio-span"></span>
+              <label class="text radio-label">
+                <input class="radio-input" type="radio" name="delivery">
+                <span class="radio-input-span"></span>
                 Курьерской службой по России -350 руб.
               </label>
             </li>
             <li class="order__form-block-item">
-              <label class="text order__form-block-label">
-                <input class="order__form-block-radio" type="radio" name="delivery">
-                <span class="order__form-block-radio-span"></span>
+              <label class="text radio-label">
+                <input class="radio-input" type="radio" name="delivery">
+                <span class="radio-input-span"></span>
                 Почтой России -250 руб.
               </label>
             </li>
@@ -1328,12 +1440,12 @@
             </button>
             <p class="order__form-confirmation-total-info">
               Нажимая продолжить я&nbsp;даю своё согласие на&nbsp;
-              <a class="link" href="#">
+              <a class="link link--underline" href="#">
                 обработку персональных данных
               </a>
               в&nbsp;соответствии
               с
-              <a class="link" href="#">
+              <a class="link link--underline" href="#">
                 Политикой конфиденциальности
               </a>
             </p>
@@ -1510,7 +1622,7 @@
         </form>
         <span class="footer-subscribe__info">
           Нажимая подписаться, вы соглашаетесь на обработку
-          <a class="link" href="#">
+          <a class="link link--underline" href="#">
             персональных данных
           </a>
         </span>

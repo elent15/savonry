@@ -1,0 +1,46 @@
+// account-sidebar
+.account-sidebar {
+  padding-top: 13px;
+  min-width: 184px;
+
+  @media (max-width:1230px) {
+    padding-top: 16px;
+  }
+
+  @media (max-width:758px) {
+    padding-top: 0;
+  }
+
+  &__title {
+    display: inline-block;
+    margin-bottom: 46px;
+  }
+
+  &__list {
+    margin-bottom: 24px;
+  }
+
+  &__item:not(:last-child) {
+    margin-bottom: 32px;
+  }
+
+  &__link {
+    display: flex;
+    align-items: center;
+    color: var(--black);
+    font-size: 18px;
+    font-weight: 400;
+    line-height: normal;
+
+    & svg {
+      flex-shrink: 0;
+      width: 24px;
+      height: 24px;
+      margin-right: 12px;
+      fill: var(--black);
+      transition: fill 0.3s ease-in-out;
+    }
+  }
+
+  &__exit-link {}
+}

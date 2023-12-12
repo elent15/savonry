@@ -6,6 +6,7 @@
 
 // подключения компонентов главной страницы (index.html)
 @import "./components/header";
+@import "./components/modal";
 @import "./components/hero";
 @import "./components/new-ptoducts";
 @import "./components/advantages";
@@ -19,4 +20,17 @@
 @import "./components/order";
 @import "./components/offers";
 
-// подключения компонентов страницы ()
+// подключения компонентов страницы профиля в личном кабинете (account-profile.html)
+@import "./components/account-sidebar";
+@import "./components/profile";
+
+// подключения компонентов страницы профиля в личном кабинете (account-password.html)
+@import "./components/password";
+
+// подключения компонентов страницы профиля в личном кабинете (account-history.html)
+@import "./components/history";
+@import "./components/accordion";
+@import "./components/pagination";
+
+// подключения компонентов страницы профиля в личном кабинете (account-mailing.html)
+@import "./components/mailing";
