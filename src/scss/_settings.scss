@@ -352,6 +352,7 @@ p {
 .third-title {
   margin: 0;
   color: var(--black);
+  font-variant-numeric: lining-nums proportional-nums;
   font-family: Raleway;
   font-size: 32px;
   font-weight: 600;
@@ -363,6 +364,17 @@ p {
 }
 
 .fourth-title {
+  margin: 0;
+  color: var(--black);
+  font-variant-numeric: lining-nums proportional-nums;
+  font-family: Raleway;
+  font-size: 24px;
+  font-weight: 600;
+  line-height: 140%;
+}
+
+.subhead {
+  display: inline-block;
   margin: 0;
   font-size: 24px;
   font-weight: 400;
