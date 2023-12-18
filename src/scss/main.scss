@@ -43,3 +43,13 @@
 
 // подключения компонентов страницы "Новости" (news.html)
 @import "./components/news";
+
+// подключения компонентов страницы "О нас" (about-us.html)
+@import "./components/savonry";
+@import "./components/principles";
+@import "./components/care";
+@import "./components/video";
+@import "./components/gallery";
+
+// подключения компонентов страницы "Оптовикам" (wholesale.html)
+@import "./components/wholesale";
