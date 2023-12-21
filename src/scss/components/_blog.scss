@@ -105,9 +105,7 @@
     }
   }
 
-  &__article-title-link {
-    display: inline-block;
-  }
+  &__article-title-link {}
 
   &__article-title {
     margin-bottom: 24px;
@@ -115,7 +113,6 @@
   }
 
   &__article-link {
-    display: inline-block;
     margin-bottom: 16px;
     font-size: 16px;
     font-weight: 400;

@@ -472,6 +472,7 @@ p {
 
 // links
 .link {
+  display: inline-block;
   color: var(--black);
   background-color: transparent;
   outline-offset: 2px;

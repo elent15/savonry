@@ -25,9 +25,8 @@
   }
 
   &__link {
-    display: flex;
+    display: inline-flex;
     align-items: center;
-    color: var(--black);
     font-size: 18px;
     font-weight: 400;
     line-height: normal;

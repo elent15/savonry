@@ -1,0 +1,1638 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Savonry</title>
+  <link rel="preload" href="./fonts/Mulish-Light.woff2" as="font" type="font/woff2" crossorigin>
+  <link rel="preload" href="./fonts/Mulish-Regular.woff2" as="font" type="font/woff2" crossorigin>
+  <link rel="preload" href="./fonts/Raleway-SemiBold.woff2" as="font" type="font/woff2" crossorigin>
+  <link rel="stylesheet" href="./css/vendor.css">
+  <link rel="stylesheet" href="./css/main.css">
+  <script defer src="./js/vendor.js"></script>
+  <script defer src="./js/main.js"></script>
+</head>
+<body>
+  <div class="wrapper">
+    <header class="header">
+  <div class="header-top">
+    <div class="container header-top__container">
+      <button class="btn-reset burger" type="button" aria-label="Открыть меню">
+        <span class="burger__line"></span>
+        <span class="burger__line"></span>
+        <span class="burger__line"></span>
+      </button>
+      <div class="header-top-nav">
+        <ul class="list-reset header-top-nav-list">
+          <li class="header-top-nav-item">
+  <a class="header-top-nav-link" href="./blog.html">
+    Статьи
+  </a>
+</li>
+<li class="header-top-nav-item">
+  <a class="header-top-nav-link" href="./news.html">
+    Новости
+  </a>
+</li>
+<li class="header__nav-item header-top-nav-item">
+  <button class="btn-reset header-top-nav-btn menu-btn-js" type="button">
+    Для клиента
+    <svg class="header__arrow-down">
+      <use href="./images/sprite.svg#arrow-down"></use>
+    </svg>
+  </button>
+  <ul class="list-reset header__submenu">
+    <li class="header__submenu-item">
+      <a class="header__submenu-link" href="./about-us.html">
+        О нас
+      </a>
+    </li>
+    <li class="header__submenu-item">
+      <a class="header__submenu-link" href="./contacts.html">
+        Контакты
+      </a>
+    </li>
+    <li class="header__submenu-item">
+      <a class="header__submenu-link" href="./delivery.html">
+        Доставка и оплата
+      </a>
+    </li>
+    <li class="header__submenu-item">
+      <a class="header__submenu-link" href="./wholesale.html">
+        Оптовикам
+      </a>
+    </li>
+  </ul>
+</li>
+
+        </ul>
+      </div>
+      <a class="header-top__logo-link" href="./index.html">
+        <picture>
+          <source media="(max-width:758px)" srcset="./images/svg/logo-md.svg">
+          <img src="./images/svg/logo.svg" alt="Логотип" width="170" height="54">
+        </picture>
+      </a>
+      <div class="header-top__icons">
+        <div class="header-top__left-icons">
+          <button class="btn-reset header-top__btn header-top__btn--search" type="button" aria-label="Поиск">
+            <svg>
+              <use href="./images/sprite.svg#search"></use>
+            </svg>
+          </button>
+          <a class="btn-reset header-top__btn header-top__btn--phone" href="tel:+78005052305" aria-label="Телефон">
+            <svg>
+              <use href="./images/sprite.svg#phone"></use>
+            </svg>
+          </a>
+        </div>
+        <div class="header-top__right-icons">
+          <a class="header-top__btn header-top__btn--lk" href="#" aria-label="Личный кабинет" data-modal="modal-entrance">
+            <svg>
+              <use href="./images/sprite.svg#lk"></use>
+            </svg>
+          </a>
+          <a class="header-top__btn header-top__btn--cart" href="./cart.html" aria-label="Корзина">
+            <svg>
+              <use href="./images/sprite.svg#cart"></use>
+            </svg>
+          </a>
+        </div>
+      </div>
+      <form class="header-top__search-form">
+        <label class="header-top__search-form-label">
+          <input class="input header-top__search-form-input" type="text" placeholder="Поиск по каталогу">
+        </label>
+        <button class="btn-reset header-top__btn header-top__search-form-icon" type="submit" aria-label="Найти">
+          <svg>
+            <use href="./images/sprite.svg#search"></use>
+          </svg>
+        </button>
+        <button class="btn-reset transparent-btn header-top__search-form-btn" type="submit">
+          Закрыть
+        </button>
+      </form>
+    </div>
+  </div>
+  <div class="header-bottom">
+    <div class="container header-bottom__container">
+      <div class="header-bottom__nav">
+        <ul class="list-reset header-bottom__nav-list">
+          <li class="header__nav-item header-bottom__nav-item">
+            <button class="btn-reset header-bottom__nav-btn menu-btn-js" type="button">
+              Акции
+            </button>
+            <ul class="list-reset header__submenu">
+              <li class="header__submenu-item">
+                <a href="#" class="header__submenu-link">
+                  Антибактериальные средства
+                </a>
+              </li>
+              <li class="header__submenu-item">
+                <a href="#" class="header__submenu-link">
+                  Антицеллюлитная серия slim&sexy
+                </a>
+              </li>
+              <li class="header__submenu-item">
+                <a href="#" class="header__submenu-link">
+                  Антицеллюлитная скраб-маска
+                </a>
+              </li>
+              <li class="header__submenu-item">
+                <a href="#" class="header__submenu-link">
+                  Гель алоэ вера
+                </a>
+              </li>
+              <li class="header__submenu-item">
+                <a href="#" class="header__submenu-link">
+                  Дезодоранты
+                </a>
+              </li>
+              <li class="header__submenu-item">
+                <a href="#" class="header__submenu-link">
+                  Кремы для тела
+                </a>
+              </li>
+              <li class="header__submenu-item">
+                <a href="#" class="header__submenu-link">
+                  Массажные плитки
+                </a>
+              </li>
+              <li class="header__submenu-item">
+                <a href="#" class="header__submenu-link">
+                  Натуральные масла
+                </a>
+              </li>
+              <li class="header__submenu-item">
+                <a href="#" class="header__submenu-link">
+                  Обертывание
+                </a>
+              </li>
+              <li class="header__submenu-item">
+                <a href="#" class="header__submenu-link">
+                  Парфюмированные спреи для тела
+                </a>
+              </li>
+              <li class="header__submenu-item">
+                <a href="#" class="header__submenu-link">
+                  Скрабы для тела
+                </a>
+              </li>
+              <li class="header__submenu-item">
+                <a href="#" class="header__submenu-link">
+                  Солнцезащитные средства
+                </a>
+              </li>
+              <li class="header__submenu-item">
+                <a href="#" class="header__submenu-link">
+                  Средства для ног
+                </a>
+              </li>
+              <li class="header__submenu-item">
+                <a href="#" class="header__submenu-link">
+                  Средства для рук
+                </a>
+              </li>
+              <li class="header__submenu-item">
+                <a href="#" class="header__submenu-link">
+                  Щетки для сухого массажа
+                </a>
+              </li>
+            </ul>
+          </li>
+          <li class="header__nav-item header-bottom__nav-item">
+            <button class="btn-reset header-bottom__nav-btn menu-btn-js" type="button">
+              Новинки
+            </button>
+            <ul class="list-reset header__submenu">
+              <li class="header__submenu-item">
+                <a href="#" class="header__submenu-link">
+                  Антибактериальные средства
+                </a>
+              </li>
+              <li class="header__submenu-item">
+                <a href="#" class="header__submenu-link">
+                  Антицеллюлитная серия slim&sexy
+                </a>
+              </li>
+              <li class="header__submenu-item">
+                <a href="#" class="header__submenu-link">
+                  Антицеллюлитная скраб-маска
+                </a>
+              </li>
+              <li class="header__submenu-item">
+                <a href="#" class="header__submenu-link">
+                  Гель алоэ вера
+                </a>
+              </li>
+              <li class="header__submenu-item">
+                <a href="#" class="header__submenu-link">
+                  Дезодоранты
+                </a>
+              </li>
+              <li class="header__submenu-item">
+                <a href="#" class="header__submenu-link">
+                  Кремы для тела
+                </a>
+              </li>
+              <li class="header__submenu-item">
+                <a href="#" class="header__submenu-link">
+                  Массажные плитки
+                </a>
+              </li>
+              <li class="header__submenu-item">
+                <a href="#" class="header__submenu-link">
+                  Натуральные масла
+                </a>
+              </li>
+              <li class="header__submenu-item">
+                <a href="#" class="header__submenu-link">
+                  Обертывание
+                </a>
+              </li>
+              <li class="header__submenu-item">
+                <a href="#" class="header__submenu-link">
+                  Парфюмированные спреи для тела
+                </a>
+              </li>
+              <li class="header__submenu-item">
+                <a href="#" class="header__submenu-link">
+                  Скрабы для тела
+                </a>
+              </li>
+              <li class="header__submenu-item">
+                <a href="#" class="header__submenu-link">
+                  Солнцезащитные средства
+                </a>
+              </li>
+              <li class="header__submenu-item">
+                <a href="#" class="header__submenu-link">
+                  Средства для ног
+                </a>
+              </li>
+              <li class="header__submenu-item">
+                <a href="#" class="header__submenu-link">
+                  Средства для рук
+                </a>
+              </li>
+              <li class="header__submenu-item">
+                <a href="#" class="header__submenu-link">
+                  Щетки для сухого массажа
+                </a>
+              </li>
+            </ul>
+          </li>
+          <li class="header__nav-item header-bottom__nav-item">
+            <button class="btn-reset header-bottom__nav-btn menu-btn-js" type="button">
+              Лицо
+            </button>
+            <ul class="list-reset header__submenu">
+              <li class="header__submenu-item">
+                <a href="#" class="header__submenu-link">
+                  Антибактериальные средства
+                </a>
+              </li>
+              <li class="header__submenu-item">
+                <a href="#" class="header__submenu-link">
+                  Антицеллюлитная серия slim&sexy
+                </a>
+              </li>
+              <li class="header__submenu-item">
+                <a href="#" class="header__submenu-link">
+                  Антицеллюлитная скраб-маска
+                </a>
+              </li>
+              <li class="header__submenu-item">
+                <a href="#" class="header__submenu-link">
+                  Гель алоэ вера
+                </a>
+              </li>
+              <li class="header__submenu-item">
+                <a href="#" class="header__submenu-link">
+                  Дезодоранты
+                </a>
+              </li>
+              <li class="header__submenu-item">
+                <a href="#" class="header__submenu-link">
+                  Кремы для тела
+                </a>
+              </li>
+              <li class="header__submenu-item">
+                <a href="#" class="header__submenu-link">
+                  Массажные плитки
+                </a>
+              </li>
+              <li class="header__submenu-item">
+                <a href="#" class="header__submenu-link">
+                  Натуральные масла
+                </a>
+              </li>
+              <li class="header__submenu-item">
+                <a href="#" class="header__submenu-link">
+                  Обертывание
+                </a>
+              </li>
+              <li class="header__submenu-item">
+                <a href="#" class="header__submenu-link">
+                  Парфюмированные спреи для тела
+                </a>
+              </li>
+              <li class="header__submenu-item">
+                <a href="#" class="header__submenu-link">
+                  Скрабы для тела
+                </a>
+              </li>
+              <li class="header__submenu-item">
+                <a href="#" class="header__submenu-link">
+                  Солнцезащитные средства
+                </a>
+              </li>
+              <li class="header__submenu-item">
+                <a href="#" class="header__submenu-link">
+                  Средства для ног
+                </a>
+              </li>
+              <li class="header__submenu-item">
+                <a href="#" class="header__submenu-link">
+                  Средства для рук
+                </a>
+              </li>
+              <li class="header__submenu-item">
+                <a href="#" class="header__submenu-link">
+                  Щетки для сухого массажа
+                </a>
+              </li>
+            </ul>
+          </li>
+          <li class="header__nav-item header-bottom__nav-item">
+            <button class="btn-reset header-bottom__nav-btn menu-btn-js" type="button">
+              Ванна и душ
+            </button>
+            <ul class="list-reset header__submenu">
+              <li class="header__submenu-item">
+                <a href="#" class="header__submenu-link">
+                  Антибактериальные средства
+                </a>
+              </li>
+              <li class="header__submenu-item">
+                <a href="#" class="header__submenu-link">
+                  Антицеллюлитная серия slim&sexy
+                </a>
+              </li>
+              <li class="header__submenu-item">
+                <a href="#" class="header__submenu-link">
+                  Антицеллюлитная скраб-маска
+                </a>
+              </li>
+              <li class="header__submenu-item">
+                <a href="#" class="header__submenu-link">
+                  Гель алоэ вера
+                </a>
+              </li>
+              <li class="header__submenu-item">
+                <a href="#" class="header__submenu-link">
+                  Дезодоранты
+                </a>
+              </li>
+              <li class="header__submenu-item">
+                <a href="#" class="header__submenu-link">
+                  Кремы для тела
+                </a>
+              </li>
+              <li class="header__submenu-item">
+                <a href="#" class="header__submenu-link">
+                  Массажные плитки
+                </a>
+              </li>
+              <li class="header__submenu-item">
+                <a href="#" class="header__submenu-link">
+                  Натуральные масла
+                </a>
+              </li>
+              <li class="header__submenu-item">
+                <a href="#" class="header__submenu-link">
+                  Обертывание
+                </a>
+              </li>
+              <li class="header__submenu-item">
+                <a href="#" class="header__submenu-link">
+                  Парфюмированные спреи для тела
+                </a>
+              </li>
+              <li class="header__submenu-item">
+                <a href="#" class="header__submenu-link">
+                  Скрабы для тела
+                </a>
+              </li>
+              <li class="header__submenu-item">
+                <a href="#" class="header__submenu-link">
+                  Солнцезащитные средства
+                </a>
+              </li>
+              <li class="header__submenu-item">
+                <a href="#" class="header__submenu-link">
+                  Средства для ног
+                </a>
+              </li>
+              <li class="header__submenu-item">
+                <a href="#" class="header__submenu-link">
+                  Средства для рук
+                </a>
+              </li>
+              <li class="header__submenu-item">
+                <a href="#" class="header__submenu-link">
+                  Щетки для сухого массажа
+                </a>
+              </li>
+            </ul>
+          </li>
+          <li class="header__nav-item header-bottom__nav-item">
+            <button class="btn-reset header-bottom__nav-btn menu-btn-js" type="button">
+              Тело
+            </button>
+            <ul class="list-reset header__submenu">
+              <li class="header__submenu-item">
+                <a href="#" class="header__submenu-link">
+                  Антибактериальные средства
+                </a>
+              </li>
+              <li class="header__submenu-item">
+                <a href="#" class="header__submenu-link">
+                  Антицеллюлитная серия slim&sexy
+                </a>
+              </li>
+              <li class="header__submenu-item">
+                <a href="#" class="header__submenu-link">
+                  Антицеллюлитная скраб-маска
+                </a>
+              </li>
+              <li class="header__submenu-item">
+                <a href="#" class="header__submenu-link">
+                  Гель алоэ вера
+                </a>
+              </li>
+              <li class="header__submenu-item">
+                <a href="#" class="header__submenu-link">
+                  Дезодоранты
+                </a>
+              </li>
+              <li class="header__submenu-item">
+                <a href="#" class="header__submenu-link">
+                  Кремы для тела
+                </a>
+              </li>
+              <li class="header__submenu-item">
+                <a href="#" class="header__submenu-link">
+                  Массажные плитки
+                </a>
+              </li>
+              <li class="header__submenu-item">
+                <a href="#" class="header__submenu-link">
+                  Натуральные масла
+                </a>
+              </li>
+              <li class="header__submenu-item">
+                <a href="#" class="header__submenu-link">
+                  Обертывание
+                </a>
+              </li>
+              <li class="header__submenu-item">
+                <a href="#" class="header__submenu-link">
+                  Парфюмированные спреи для тела
+                </a>
+              </li>
+              <li class="header__submenu-item">
+                <a href="#" class="header__submenu-link">
+                  Скрабы для тела
+                </a>
+              </li>
+              <li class="header__submenu-item">
+                <a href="#" class="header__submenu-link">
+                  Солнцезащитные средства
+                </a>
+              </li>
+              <li class="header__submenu-item">
+                <a href="#" class="header__submenu-link">
+                  Средства для ног
+                </a>
+              </li>
+              <li class="header__submenu-item">
+                <a href="#" class="header__submenu-link">
+                  Средства для рук
+                </a>
+              </li>
+              <li class="header__submenu-item">
+                <a href="#" class="header__submenu-link">
+                  Щетки для сухого массажа
+                </a>
+              </li>
+            </ul>
+          </li>
+          <li class="header__nav-item header-bottom__nav-item">
+            <button class="btn-reset header-bottom__nav-btn menu-btn-js" type="button">
+              Волосы
+            </button>
+            <ul class="list-reset header__submenu header__submenu--right">
+              <li class="header__submenu-item">
+                <a href="#" class="header__submenu-link">
+                  Антибактериальные средства
+                </a>
+              </li>
+              <li class="header__submenu-item">
+                <a href="#" class="header__submenu-link">
+                  Антицеллюлитная серия slim&sexy
+                </a>
+              </li>
+              <li class="header__submenu-item">
+                <a href="#" class="header__submenu-link">
+                  Антицеллюлитная скраб-маска
+                </a>
+              </li>
+              <li class="header__submenu-item">
+                <a href="#" class="header__submenu-link">
+                  Гель алоэ вера
+                </a>
+              </li>
+              <li class="header__submenu-item">
+                <a href="#" class="header__submenu-link">
+                  Дезодоранты
+                </a>
+              </li>
+              <li class="header__submenu-item">
+                <a href="#" class="header__submenu-link">
+                  Кремы для тела
+                </a>
+              </li>
+              <li class="header__submenu-item">
+                <a href="#" class="header__submenu-link">
+                  Массажные плитки
+                </a>
+              </li>
+              <li class="header__submenu-item">
+                <a href="#" class="header__submenu-link">
+                  Натуральные масла
+                </a>
+              </li>
+              <li class="header__submenu-item">
+                <a href="#" class="header__submenu-link">
+                  Обертывание
+                </a>
+              </li>
+              <li class="header__submenu-item">
+                <a href="#" class="header__submenu-link">
+                  Парфюмированные спреи для тела
+                </a>
+              </li>
+              <li class="header__submenu-item">
+                <a href="#" class="header__submenu-link">
+                  Скрабы для тела
+                </a>
+              </li>
+              <li class="header__submenu-item">
+                <a href="#" class="header__submenu-link">
+                  Солнцезащитные средства
+                </a>
+              </li>
+              <li class="header__submenu-item">
+                <a href="#" class="header__submenu-link">
+                  Средства для ног
+                </a>
+              </li>
+              <li class="header__submenu-item">
+                <a href="#" class="header__submenu-link">
+                  Средства для рук
+                </a>
+              </li>
+              <li class="header__submenu-item">
+                <a href="#" class="header__submenu-link">
+                  Щетки для сухого массажа
+                </a>
+              </li>
+            </ul>
+          </li>
+          <li class="header__nav-item header-bottom__nav-item">
+            <button class="btn-reset header-bottom__nav-btn menu-btn-js" type="button">
+              Для него
+            </button>
+            <ul class="list-reset header__submenu header__submenu--right">
+              <li class="header__submenu-item">
+                <a href="#" class="header__submenu-link">
+                  Антибактериальные средства
+                </a>
+              </li>
+              <li class="header__submenu-item">
+                <a href="#" class="header__submenu-link">
+                  Антицеллюлитная серия slim&sexy
+                </a>
+              </li>
+              <li class="header__submenu-item">
+                <a href="#" class="header__submenu-link">
+                  Антицеллюлитная скраб-маска
+                </a>
+              </li>
+              <li class="header__submenu-item">
+                <a href="#" class="header__submenu-link">
+                  Гель алоэ вера
+                </a>
+              </li>
+              <li class="header__submenu-item">
+                <a href="#" class="header__submenu-link">
+                  Дезодоранты
+                </a>
+              </li>
+              <li class="header__submenu-item">
+                <a href="#" class="header__submenu-link">
+                  Кремы для тела
+                </a>
+              </li>
+              <li class="header__submenu-item">
+                <a href="#" class="header__submenu-link">
+                  Массажные плитки
+                </a>
+              </li>
+              <li class="header__submenu-item">
+                <a href="#" class="header__submenu-link">
+                  Натуральные масла
+                </a>
+              </li>
+              <li class="header__submenu-item">
+                <a href="#" class="header__submenu-link">
+                  Обертывание
+                </a>
+              </li>
+              <li class="header__submenu-item">
+                <a href="#" class="header__submenu-link">
+                  Парфюмированные спреи для тела
+                </a>
+              </li>
+              <li class="header__submenu-item">
+                <a href="#" class="header__submenu-link">
+                  Скрабы для тела
+                </a>
+              </li>
+              <li class="header__submenu-item">
+                <a href="#" class="header__submenu-link">
+                  Солнцезащитные средства
+                </a>
+              </li>
+              <li class="header__submenu-item">
+                <a href="#" class="header__submenu-link">
+                  Средства для ног
+                </a>
+              </li>
+              <li class="header__submenu-item">
+                <a href="#" class="header__submenu-link">
+                  Средства для рук
+                </a>
+              </li>
+              <li class="header__submenu-item">
+                <a href="#" class="header__submenu-link">
+                  Щетки для сухого массажа
+                </a>
+              </li>
+            </ul>
+          </li>
+          <li class="header__nav-item header-bottom__nav-item">
+            <button class="btn-reset header-bottom__nav-btn menu-btn-js" type="button">
+              Подарки
+            </button>
+            <ul class="list-reset header__submenu header__submenu--right">
+              <li class="header__submenu-item">
+                <a href="#" class="header__submenu-link">
+                  Антибактериальные средства
+                </a>
+              </li>
+              <li class="header__submenu-item">
+                <a href="#" class="header__submenu-link">
+                  Антицеллюлитная серия slim&sexy
+                </a>
+              </li>
+              <li class="header__submenu-item">
+                <a href="#" class="header__submenu-link">
+                  Антицеллюлитная скраб-маска
+                </a>
+              </li>
+              <li class="header__submenu-item">
+                <a href="#" class="header__submenu-link">
+                  Гель алоэ вера
+                </a>
+              </li>
+              <li class="header__submenu-item">
+                <a href="#" class="header__submenu-link">
+                  Дезодоранты
+                </a>
+              </li>
+              <li class="header__submenu-item">
+                <a href="#" class="header__submenu-link">
+                  Кремы для тела
+                </a>
+              </li>
+              <li class="header__submenu-item">
+                <a href="#" class="header__submenu-link">
+                  Массажные плитки
+                </a>
+              </li>
+              <li class="header__submenu-item">
+                <a href="#" class="header__submenu-link">
+                  Натуральные масла
+                </a>
+              </li>
+              <li class="header__submenu-item">
+                <a href="#" class="header__submenu-link">
+                  Обертывание
+                </a>
+              </li>
+              <li class="header__submenu-item">
+                <a href="#" class="header__submenu-link">
+                  Парфюмированные спреи для тела
+                </a>
+              </li>
+              <li class="header__submenu-item">
+                <a href="#" class="header__submenu-link">
+                  Скрабы для тела
+                </a>
+              </li>
+              <li class="header__submenu-item">
+                <a href="#" class="header__submenu-link">
+                  Солнцезащитные средства
+                </a>
+              </li>
+              <li class="header__submenu-item">
+                <a href="#" class="header__submenu-link">
+                  Средства для ног
+                </a>
+              </li>
+              <li class="header__submenu-item">
+                <a href="#" class="header__submenu-link">
+                  Средства для рук
+                </a>
+              </li>
+              <li class="header__submenu-item">
+                <a href="#" class="header__submenu-link">
+                  Щетки для сухого массажа
+                </a>
+              </li>
+            </ul>
+          </li>
+          <li class="header__nav-item header-bottom__nav-item">
+            <button class="btn-reset header-bottom__nav-btn menu-btn-js" type="button">
+              Серии
+            </button>
+            <ul class="list-reset header__submenu header__submenu--right">
+              <li class="header__submenu-item">
+                <a href="#" class="header__submenu-link">
+                  Антибактериальные средства
+                </a>
+              </li>
+              <li class="header__submenu-item">
+                <a href="#" class="header__submenu-link">
+                  Антицеллюлитная серия slim&sexy
+                </a>
+              </li>
+              <li class="header__submenu-item">
+                <a href="#" class="header__submenu-link">
+                  Антицеллюлитная скраб-маска
+                </a>
+              </li>
+              <li class="header__submenu-item">
+                <a href="#" class="header__submenu-link">
+                  Гель алоэ вера
+                </a>
+              </li>
+              <li class="header__submenu-item">
+                <a href="#" class="header__submenu-link">
+                  Дезодоранты
+                </a>
+              </li>
+              <li class="header__submenu-item">
+                <a href="#" class="header__submenu-link">
+                  Кремы для тела
+                </a>
+              </li>
+              <li class="header__submenu-item">
+                <a href="#" class="header__submenu-link">
+                  Массажные плитки
+                </a>
+              </li>
+              <li class="header__submenu-item">
+                <a href="#" class="header__submenu-link">
+                  Натуральные масла
+                </a>
+              </li>
+              <li class="header__submenu-item">
+                <a href="#" class="header__submenu-link">
+                  Обертывание
+                </a>
+              </li>
+              <li class="header__submenu-item">
+                <a href="#" class="header__submenu-link">
+                  Парфюмированные спреи для тела
+                </a>
+              </li>
+              <li class="header__submenu-item">
+                <a href="#" class="header__submenu-link">
+                  Скрабы для тела
+                </a>
+              </li>
+              <li class="header__submenu-item">
+                <a href="#" class="header__submenu-link">
+                  Солнцезащитные средства
+                </a>
+              </li>
+              <li class="header__submenu-item">
+                <a href="#" class="header__submenu-link">
+                  Средства для ног
+                </a>
+              </li>
+              <li class="header__submenu-item">
+                <a href="#" class="header__submenu-link">
+                  Средства для рук
+                </a>
+              </li>
+              <li class="header__submenu-item">
+                <a href="#" class="header__submenu-link">
+                  Щетки для сухого массажа
+                </a>
+              </li>
+            </ul>
+          </li>
+          <li class="header__nav-item header-bottom__nav-item">
+            <button class="btn-reset header-bottom__nav-btn menu-btn-js" type="button">
+              Аксессуары
+            </button>
+            <ul class="list-reset header__submenu header__submenu--right">
+              <li class="header__submenu-item">
+                <a href="#" class="header__submenu-link">
+                  Антибактериальные средства
+                </a>
+              </li>
+              <li class="header__submenu-item">
+                <a href="#" class="header__submenu-link">
+                  Антицеллюлитная серия slim&sexy
+                </a>
+              </li>
+              <li class="header__submenu-item">
+                <a href="#" class="header__submenu-link">
+                  Антицеллюлитная скраб-маска
+                </a>
+              </li>
+              <li class="header__submenu-item">
+                <a href="#" class="header__submenu-link">
+                  Гель алоэ вера
+                </a>
+              </li>
+              <li class="header__submenu-item">
+                <a href="#" class="header__submenu-link">
+                  Дезодоранты
+                </a>
+              </li>
+              <li class="header__submenu-item">
+                <a href="#" class="header__submenu-link">
+                  Кремы для тела
+                </a>
+              </li>
+              <li class="header__submenu-item">
+                <a href="#" class="header__submenu-link">
+                  Массажные плитки
+                </a>
+              </li>
+              <li class="header__submenu-item">
+                <a href="#" class="header__submenu-link">
+                  Натуральные масла
+                </a>
+              </li>
+              <li class="header__submenu-item">
+                <a href="#" class="header__submenu-link">
+                  Обертывание
+                </a>
+              </li>
+              <li class="header__submenu-item">
+                <a href="#" class="header__submenu-link">
+                  Парфюмированные спреи для тела
+                </a>
+              </li>
+              <li class="header__submenu-item">
+                <a href="#" class="header__submenu-link">
+                  Скрабы для тела
+                </a>
+              </li>
+              <li class="header__submenu-item">
+                <a href="#" class="header__submenu-link">
+                  Солнцезащитные средства
+                </a>
+              </li>
+              <li class="header__submenu-item">
+                <a href="#" class="header__submenu-link">
+                  Средства для ног
+                </a>
+              </li>
+              <li class="header__submenu-item">
+                <a href="#" class="header__submenu-link">
+                  Средства для рук
+                </a>
+              </li>
+              <li class="header__submenu-item">
+                <a href="#" class="header__submenu-link">
+                  Щетки для сухого массажа
+                </a>
+              </li>
+            </ul>
+          </li>
+          <li class="header-top-nav-links-hidden">
+            <ul class="list-reset header-top-nav-list">
+              <li class="header-top-nav-item">
+  <a class="header-top-nav-link" href="./blog.html">
+    Статьи
+  </a>
+</li>
+<li class="header-top-nav-item">
+  <a class="header-top-nav-link" href="./news.html">
+    Новости
+  </a>
+</li>
+<li class="header__nav-item header-top-nav-item">
+  <button class="btn-reset header-top-nav-btn menu-btn-js" type="button">
+    Для клиента
+    <svg class="header__arrow-down">
+      <use href="./images/sprite.svg#arrow-down"></use>
+    </svg>
+  </button>
+  <ul class="list-reset header__submenu">
+    <li class="header__submenu-item">
+      <a class="header__submenu-link" href="./about-us.html">
+        О нас
+      </a>
+    </li>
+    <li class="header__submenu-item">
+      <a class="header__submenu-link" href="./contacts.html">
+        Контакты
+      </a>
+    </li>
+    <li class="header__submenu-item">
+      <a class="header__submenu-link" href="./delivery.html">
+        Доставка и оплата
+      </a>
+    </li>
+    <li class="header__submenu-item">
+      <a class="header__submenu-link" href="./wholesale.html">
+        Оптовикам
+      </a>
+    </li>
+  </ul>
+</li>
+
+            </ul>
+          </li>
+        </ul>
+      </div>
+    </div>
+  </div>
+  <!-- модальное окно "Вход" -->
+<div class="modal" id="modal-entrance">
+  <div class="modal__bg">
+    <div class="modal__body">
+      <button class="btn-reset svg-btn modal__close-btn">
+        <svg>
+          <use xlink:href="./images/sprite.svg#cross"></use>
+        </svg>
+      </button>
+      <div class="modal__titles-block">
+        <h3 class="third-title modal__title">
+          <button class="btn-reset modal__title-btn" type="button" data-modal="modal-reg">
+            Регистрация
+          </button>
+        </h3>
+        <h3 class="third-title modal__title">
+          Вход
+        </h3>
+      </div>
+      <form class="modal__form">
+        <label class="modal__label">
+          <input class="input modal__form-input" type="email" placeholder="E-mail">
+        </label>
+        <label class="modal__label">
+          <input class="input modal__form-input" type="password" placeholder="Пароль">
+        </label>
+        <a class="btn primary-btn modal__form-link btn-js" href="./account-profile.html">
+          Продолжить
+        </a>
+        <button class="btn-reset transparent-btn modal__form-btn" type="button" data-modal="modal-recovery">
+          Забыли пароль?
+        </button>
+      </form>
+    </div>
+  </div>
+</div>
+
+<!-- модальное окно "Забыли пароль?" -->
+<div class="modal" id="modal-recovery">
+  <div class="modal__bg">
+    <div class="modal__body">
+      <button class="btn-reset svg-btn modal__close-btn">
+        <svg>
+          <use xlink:href="./images/sprite.svg#cross"></use>
+        </svg>
+      </button>
+      <div class="modal__titles-block">
+        <h3 class="third-title modal__title">
+          Забыли пароль?
+        </h3>
+      </div>
+      <p class="modal__text">
+        Введите E-Mail Вашей учетной записи. Нажмите кнопку Вперед, чтобы получить пароль по электронной почте.
+      </p>
+      <form class="modal__form">
+        <label class="modal__label">
+          <input class="input modal__form-input" type="email" placeholder="E-mail">
+        </label>
+        <button class="btn-reset btn primary-btn modal__form-link" type="button" data-modal="modal-entrance">
+          Продолжить
+        </button>
+      </form>
+    </div>
+  </div>
+</div>
+
+<!-- модальное окно "Регистрация" -->
+<div class="modal" id="modal-reg">
+  <div class="modal__bg">
+    <div class="modal__body">
+      <button class="btn-reset svg-btn modal__close-btn">
+        <svg>
+          <use xlink:href="./images/sprite.svg#cross"></use>
+        </svg>
+      </button>
+      <div class="modal__titles-block">
+        <h3 class="third-title modal__title">
+          Регистрация
+        </h3>
+        <h3 class="third-title modal__title">
+          <button class="btn-reset modal__title-btn" type="button" data-modal="modal-entrance">
+            Вход
+          </button>
+        </h3>
+      </div>
+      <form class="modal__form">
+        <label class="modal__label">
+          <input class="input modal__form-input" type="text" placeholder="Имя">
+        </label>
+        <label class="modal__label">
+          <input class="input modal__form-input" type="text" placeholder="Фамилия">
+        </label>
+        <label class="modal__label">
+          <input class="input modal__form-input" type="email" placeholder="E-mail">
+        </label>
+        <label class="modal__label">
+          <input class="input modal__form-input" type="tel" placeholder="+ 7 (999) 999-99-99">
+        </label>
+        <label class="modal__label">
+          <input class="input modal__form-input" type="password" placeholder="Пароль">
+        </label>
+        <label class="modal__label">
+          <input class="input modal__form-input" type="password" placeholder="Повторите пароль">
+        </label>
+        <button class="btn-reset btn primary-btn modal__form-link" type="button" data-modal="modal-entrance">
+          Продолжить
+        </button>
+      </form>
+    </div>
+  </div>
+</div>
+
+</header>
+
+    <main class="main">
+      <div class="breadcrumbs">
+  <div class="container">
+    <ul class="list-reset breadcrumbs__list">
+      <li class="breadcrumbs__item">
+        <a class="breadcrumbs__link" href="./index.html">
+          Главная
+        </a>
+      </li>
+      <li class="breadcrumbs__item">
+        Доставка и оплата
+      </li>
+    </ul>
+  </div>
+</div>
+
+      <section class="delivery-payment">
+  <div class="container delivery-payment__container">
+    <h2 class="second-title delivery-payment__title">
+      Доставка и оплата
+    </h2>
+    <div class="delivery-payment__block delivery-payment__payment">
+      <h3 class="third-title delivery-payment__block-title">
+        Оплата заказа
+      </h3>
+      <p class="text delivery-payment__paragraph">
+        На данный момент в нашем интернет магазине возможны четыре варианта оплаты:
+      </p>
+      <ul class="list-reset delivery-payment__payment-list">
+        <li class="text delivery-payment__payment-item">
+          наличными курьеру (только для Санкт-Петербурга)
+        </li>
+        <li class="text delivery-payment__payment-item">
+          банковской картой
+        </li>
+        <li class="text delivery-payment__payment-item">
+          квитанцией через банк
+        </li>
+        <li class="text delivery-payment__payment-item">
+          Яндекс Деньгами
+        </li>
+      </ul>
+      <p class="text delivery-payment__paragraph">
+        Чтобы оплатить заказ банковской картой, банковским переводом, Яндекс Деньгами или наличными Вам необходимо
+        выбрать соответствующий способ оплаты в графе "Способ оплаты" при оформлении заказа на сайте.
+      </p>
+      <p class="text delivery-payment__paragraph">
+        Наличными курьеру (СПб в пределах КАД): Оплата заказа производится наличными рублями курьеру при получении
+        товара.
+      </p>
+      <p class="text delivery-payment__paragraph">
+        При оплате заказа банковской картой (100 % предоплата), обработка платежа происходит на сайте системы
+        электронных платежей Сбербанка , которая прошла международную сертификацию. Это значит, что Ваши
+        конфиденциальные данные (реквизиты карты, регистрационные данные и др.) не поступают в интернет-магазин, их
+        обработка полностью защищена и никто, в том числе наш интернет магазин натуральной косметики и SavonryShop.ru не
+        может получить персональные и банковские данные клиента.
+      </p>
+      <p class="text delivery-payment__paragraph">
+        ВНИМАНИЕ!!! К оплате не принимаются карты платежных систем Maestro и Visa Electron Оплаты принимаются только по
+        картам, выпущенным на территории РФ!!!
+      </p>
+      <p class="text delivery-payment__paragraph">
+        При выборе способа оплаты квитанцией через банк, распечатайте квитанцию. Оплатите ее в любом отделении любого
+        банка. ВНИМАНИЕ при данном способе оплаты банк удержит комиссию, размер которой определяется банком. Так же вы
+        можете оплатить квитанцию через интернет банк, если у вас таковой имеется.
+      </p>
+      <p class="text delivery-payment__paragraph">
+        В настоящее время заказы принимаются через сайт только от физических лиц. Для того чтобы купить натуральную
+        косметику Savonry юридическому лицу, Вам необходимо связаться с нашим офисом по контактным данным – в разделе
+        контакты
+      </p>
+    </div>
+    <div class="delivery-payment__block delivery-payment__delivery">
+      <h3 class="third-title delivery-payment__block-title">
+        Доставка и оплата заказов интернет магазина
+      </h3>
+      <span class="subhead delivery-payment__subhead">
+        Доставка по России
+      </span>
+      <p class="text delivery-payment__paragraph">
+        Доставка заказов по России осуществляется следующими способами:
+      </p>
+      <ol class="list-reset delivery-payment__delivery-list">
+        <li class="delivery-payment__delivery-item">
+          <span class="delivery-payment__delivery-item-title">
+            Курьерскими службами DPD и СДЕК
+          </span>
+          <p class="text delivery-payment__paragraph">
+            При заказе от 2500 рублей курьерская доставка осуществляется бесплатно, при заказе на меньшую сумму
+            стоимость доставки составит 350 рублей. Передача заказов службе доставки осуществляется в течение 1-3
+            рабочих дней после поступления оплаты на наш расчетный счет, только по рабочим дням. Курьерские службы
+            доставляют заказы до двери в максимально короткие сроки.
+          </p>
+        </li>
+        <li class="delivery-payment__delivery-item">
+          <span class="delivery-payment__delivery-item-title">
+            Почтой России
+          </span>
+          <p class="text delivery-payment__paragraph">
+            При заказе от 2500 рублей доставка Почтой России осуществляется бесплатно, при заказе на меньшую сумму
+            стоимость доставки составит 250 рублей. Отправка заказов осуществляется в течение 1-3 рабочих дней после
+            поступления оплаты на наш расчетный счет, только по рабочим дням.
+          </p>
+        </li>
+        <li class="delivery-payment__delivery-item">
+          <span class="delivery-payment__delivery-item-title">
+            До пунктов выдачи заказов(ПВЗ)
+          </span>
+          <p class="text delivery-payment__paragraph">
+            Наша курьерская служба имеет более 1000 пунктов выдачи заказов по всей России. Пункты выдачи удобно
+            расположены и их легко найти. При заказе от 2500 рублей доставка до ПВЗ осуществляется бесплатно. При
+            меньшей сумме заказа стоимость доставки до ПВЗ будет составлять 300 рублей. Передача заказов курьерской
+            службе осуществляется в течение 1-3 рабочих дней после поступления оплаты на наш расчетный счет, только по
+            рабочим дням. После того как Ваш заказ поступит в пункт выдачи, на телефон придет SMS-оповещение, заказ
+            хранится в пункте выдачи 14 календарных дней, возможно платное продление хранения.
+          </p>
+        </li>
+      </ol>
+      <span class="subhead delivery-payment__subhead">
+        Доставка по СПБ
+      </span>
+      <p class="text delivery-payment__paragraph">
+        Оплата заказов производится курьеру при получении товара, возможна оплата банковской картой, Яндекс Деньгами
+        либо по квитанции через банк (100% предоплата).
+      </p>
+      <p class="text delivery-payment__paragraph">
+        При оформлении заказа в Санкт-Петербурге заказ возможно получить следующими способами:
+      </p>
+      <ol class="list-reset delivery-payment__delivery-list">
+        <li class="delivery-payment__delivery-item">
+          <span class="delivery-payment__delivery-item-title">
+            Курьерская доставка
+          </span>
+          <p class="text delivery-payment__paragraph">
+            При заказе от 2500 рублей доставка заказов по Санкт-Петербургу в пределах КАД осуществляется бесплатно, при
+            меньшей сумме заказа стоимость доставки составит 300 рублей. Доставка заказов осуществляется в течение 1-2
+            рабочих дней после оформления заказа, по будням с 11:00 до 18:00. Если заказ был предварительно оплачен
+            (банковской картой, Яндекс Деньгами либо квитанцией), то доставка будет осуществлена в течение 1-2 рабочих
+            дней после зачисления оплаты на наш расчетный счет.
+          </p>
+        </li>
+        <li class="delivery-payment__delivery-item">
+          <span class="delivery-payment__delivery-item-title">
+            Доставка до ПВЗ
+          </span>
+          <p class="text delivery-payment__paragraph">
+            Доставка до ПВЗ осуществляется после 100% оплаты заказа. При заказе 2500 рублей и более доставка до ПВЗ
+            осуществляется бесплатно, при меньшей сумме заказа стоимость доставки будет составлять 250 рублей. Заказы
+            передаются в службу доставки в течение 1-2 рабочих дней после поступления оплаты товара на наш расчетный
+            счет. После того как Ваш заказ поступит в пункт выдачи, на телефон придет SMS-оповещение, заказ хранится в
+            пункте выдачи 14 календарных дней, возможно платное продление хранения.
+          </p>
+        </li>
+      </ol>
+    </div>
+    <div class="delivery-payment__block delivery-payment__questions">
+      <h3 class="third-title delivery-payment__block-title">
+        Часто задаваемые вопросы
+      </h3>
+      <ul class="list-reset delivery-payment__accordion-list">
+        <li class="accordion accordion--active delivery-payment__accordion">
+          <div class="delivery-payment__accordion-header">
+            <span class="subhead delivery-payment__questions-subhead">
+              Как оформить заказ в интернет магазине?
+            </span>
+            <button class="btn-reset svg-btn accordion__trigger delivery-payment__accordion-trigger"
+              aria-expanded="true" type="button">
+              <svg>
+                <use href="./images/sprite.svg#arrow-down"></use>
+              </svg>
+            </button>
+          </div>
+          <div class="accordion__content delivery-payment__accordion-content" aria-hidden="false">
+            <p class="text delivery-payment__questions-paragraph">
+              Выберите интересующие вас товары в каталоге интернет магазина. Оформление заказа осуществляется в разделе
+              Корзина. Оформить заказ с помощью быстрой регистрации, или предварительно зарегистрировавшись в нашем
+              интернет магазине в разделе Регистрация. После перехода в корзину выберите способ доставки и оплаты и
+              нажмите кнопку Оформить. Подтвердите Ваши контактные данные. Письмо с подтверждением вашего заказа придет
+              вам на указанный адрес электронной почты.
+            </p>
+          </div>
+        </li>
+        <li class="accordion delivery-payment__accordion">
+          <div class="delivery-payment__accordion-header">
+            <span class="subhead delivery-payment__questions-subhead">
+              Режим работы интернет магазина savonryshop.ru
+            </span>
+            <button class="btn-reset svg-btn accordion__trigger delivery-payment__accordion-trigger"
+              aria-expanded="false" type="button">
+              <svg>
+                <use href="./images/sprite.svg#arrow-down"></use>
+              </svg>
+            </button>
+          </div>
+          <div class="accordion__content delivery-payment__accordion-content" aria-hidden="true">
+            <p class="text delivery-payment__questions-paragraph">
+              Заказы в интернет магазине принимаются круглосуточно, в автоматическом режиме. Обработка и доставка
+              заказов
+              осуществляется в рабочие дни с 9:30 до 17:30 по Мск.
+            </p>
+          </div>
+        </li>
+        <li class="accordion delivery-payment__accordion">
+          <div class="delivery-payment__accordion-header">
+            <span class="subhead delivery-payment__questions-subhead">
+              Подтверждение заказа в интернет магазине
+            </span>
+            <button class="btn-reset svg-btn accordion__trigger delivery-payment__accordion-trigger"
+              aria-expanded="false" type="button">
+              <svg>
+                <use href="./images/sprite.svg#arrow-down"></use>
+              </svg>
+            </button>
+          </div>
+          <div class="accordion__content delivery-payment__accordion-content" aria-hidden="true">
+            <p class="text delivery-payment__questions-paragraph">
+              После осуществления заказа на указанный вами адрес электронной почты должно прийти письмо с номером вашего
+              заказа и описанием его содержимого. Если по какой-либо причине данное письмо вам не пришло, то свяжитесь с
+              нами по адресу электронной почты
+              <a class="link" href="mailto:zakaz@savonryshop.ru">
+                zakaz@savonryshop.ru
+              </a>
+              или позвонив по телефону
+              <a class="link" href="tel:+79817022227">
+                +7-981-702-22-27
+              </a>
+              (в рабочие дни с 9:30 до 17:30 по Мск.).
+            </p>
+          </div>
+        </li>
+        <li class="accordion delivery-payment__accordion">
+          <div class="delivery-payment__accordion-header">
+            <span class="subhead delivery-payment__questions-subhead">
+              Как внести изменения в заказ?
+            </span>
+            <button class="btn-reset svg-btn accordion__trigger delivery-payment__accordion-trigger"
+              aria-expanded="false" type="button">
+              <svg>
+                <use href="./images/sprite.svg#arrow-down"></use>
+              </svg>
+            </button>
+          </div>
+          <div class="accordion__content delivery-payment__accordion-content" aria-hidden="true">
+            <p class="text delivery-payment__questions-paragraph">
+              Внимание! Вносить изменения в заказ возможно только ДО оплаты вами заказа! Если вы хотите добавить какой
+              либо товар в заказ, вернитесь в каталог интернет магазина. Если вы хотите отказаться от какого либо
+              товара,
+              удалите его в разделе Корзина. Если у вас возникли, какие либо вопросы, которые вы не можете решить
+              указанными способами необходимо написать нам письмо на наш электронный адрес
+              <a class="link" href="mailto:zakaz@savonryshop.ru">
+                zakaz@savonryshop.ru
+              </a>
+              (круглосуточно) или позвонить по телефону
+              <a class="link" href="tel:+79817022227">
+                +7-981-702-22-27
+              </a>
+              (в рабочие дни с 9:30 до 17:30 по Мск.).
+            </p>
+          </div>
+        </li>
+        <li class="accordion delivery-payment__accordion">
+          <div class="delivery-payment__accordion-header">
+            <span class="subhead delivery-payment__questions-subhead">
+              Возврат заказа приобретенного интернет магазине
+            </span>
+            <button class="btn-reset svg-btn accordion__trigger delivery-payment__accordion-trigger"
+              aria-expanded="false" type="button">
+              <svg>
+                <use href="./images/sprite.svg#arrow-down"></use>
+              </svg>
+            </button>
+          </div>
+          <div class="accordion__content delivery-payment__accordion-content" aria-hidden="true">
+            <p class="text delivery-payment__questions-paragraph">
+              Если у вас есть причина для возврата товара, то здесь вы можете найти информацию как это можно сделать:
+            </p>
+            <p class="text delivery-payment__questions-paragraph">
+              Товар не должен быть использован, и оригинальная упаковка должна быть неповрежденной;
+            </p>
+            <p class="text delivery-payment__questions-paragraph">
+              У вас должны иметься документы, подтверждающие оплату заказа – товарный чек, накладная или банковская
+              квитанция;
+            </p>
+            <p class="text delivery-payment__questions-paragraph">
+              После получения всех необходимых данных мы вернем уплаченные вами деньги, в течение 30 календарных дней.
+              Если вы действительно хотите вернуть заказ, пожалуйста свяжитесь с нами по электронной почте
+              <a class="link" href="mailto:zakaz@savonryshop.ru">
+                zakaz@savonryshop.ru
+              </a>,
+              и мы отправим вам форму для возврата и обсудим его возможности.
+            </p>
+          </div>
+        </li>
+        <li class="accordion delivery-payment__accordion">
+          <div class="delivery-payment__accordion-header">
+            <span class="subhead delivery-payment__questions-subhead">
+              Можно ли проверить содержимое заказа и отказаться от заказа?
+            </span>
+            <button class="btn-reset svg-btn accordion__trigger delivery-payment__accordion-trigger"
+              aria-expanded="false" type="button">
+              <svg>
+                <use href="./images/sprite.svg#arrow-down"></use>
+              </svg>
+            </button>
+          </div>
+          <div class="accordion__content delivery-payment__accordion-content" aria-hidden="true">
+            <p class="text delivery-payment__questions-paragraph">
+              При получении заказа необходимо проверить целостность упаковки и внутреннее содержимое заказа. При
+              обнаружении несоответствия внутреннего содержимого заказа, вы можете только полностью отказаться от
+              заказа.
+              Частичный отказ или возврат не предусмотрен.
+            </p>
+          </div>
+        </li>
+        <li class="accordion delivery-payment__accordion">
+          <div class="delivery-payment__accordion-header">
+            <span class="subhead delivery-payment__questions-subhead">
+              Можно ли оформить заказ на другого человека?
+            </span>
+            <button class="btn-reset svg-btn accordion__trigger delivery-payment__accordion-trigger"
+              aria-expanded="false" type="button">
+              <svg>
+                <use href="./images/sprite.svg#arrow-down"></use>
+              </svg>
+            </button>
+          </div>
+          <div class="accordion__content delivery-payment__accordion-content" aria-hidden="true">
+            <p class="text delivery-payment__questions-paragraph">
+              Если вы оформляете заказ, а получателем будет другой человек, то в графе &laquo;Получатель&raquo; вам необходимо
+              указать
+              его ФИО, а так же точные контактные данные. Плательщиком может выступать любое физическое лицо, являющееся
+              резидентом РФ.
+            </p>
+          </div>
+        </li>
+      </ul>
+    </div>
+  </div>
+</section>
+
+    </main>
+    <footer class="footer">
+  <div class="footer-subscribe">
+    <div class="footer-subscribe__img-block">
+      <picture>
+        <source srcset="./images/subscribe-470.webp" media="(max-width:470px)" type="image/webp">
+        <source srcset="./images/subscribe-470.png" media="(max-width:470px)" type="image/png">
+        <source srcset="./images/subscribe-758.webp" media="(max-width:758px)" type="image/webp">
+        <source srcset="./images/subscribe-758.png" media="(max-width:758px)" type="image/png">
+        <source srcset="./images/subscribe-990.webp" media="(max-width:990px)" type="image/webp">
+        <source srcset="./images/subscribe-990.png" media="(max-width:990px)" type="image/png">
+        <source srcset="./images/subscribe-1230.webp" media="(max-width:1230px)" type="image/webp">
+        <source srcset="./images/subscribe-1230.png" media="(max-width:1230px)" type="image/png">
+        <source srcset="./images/subscribe-1920.webp" type="image/webp">
+        <img class="footer-subscribe__img" src="./images/subscribe-1920.png" alt="Косметика Savonry" loading="lazy">
+      </picture>
+    </div>
+    <div class="container-fluid footer-subscribe__container">
+      <div class="footer-subscribe__content">
+        <h2 class="second-title footer-subscribe__title">
+          Узнавайте первыми о наших акциях, розыгрышах и&nbsp;новостях
+        </h2>
+        <form class="footer-subscribe__form">
+          <label class="footer-subscribe__form-label">
+            <input class="footer-subscribe__form-input" type="email" placeholder="E-mail">
+          </label>
+          <button class="btn-reset btn primary-btn footer-subscribe__form-btn" type="submit">
+            Подписаться
+          </button>
+        </form>
+        <span class="footer-subscribe__info">
+          Нажимая подписаться, вы соглашаетесь на обработку
+          <a class="link link--underline" href="#">
+            персональных данных
+          </a>
+        </span>
+      </div>
+    </div>
+  </div>
+  <div class="footer-bottom">
+    <div class="container footer-bottom__container">
+      <div class="footer-bottom__info">
+        <a class="footer-bottom__info-logo-link" href="./index.html">
+          <img src="./images/svg/footer-logo.svg" alt="Логотип" width="170" height="54">
+        </a>
+        <div class="text footer-bottom__info-text">
+          SAVONRY - бренд высококачественной и&nbsp;эффективной натуральной косметики с&nbsp;чистым растительным
+          составом
+        </div>
+        <a class="footer-bottom__info-social" href="#" aria-label="ВКонтакте">
+          <svg>
+            <use href="./images/sprite.svg#vk"></use>
+          </svg>
+        </a>
+      </div>
+      <div class="footer-bottom__catalog">
+        <span class="subhead footer-bottom__title">
+          Каталог
+        </span>
+        <div class="footer-bottom__list-wrapper">
+          <ul class="list-reset footer-bottom__list">
+            <li class="footer-bottom__list-item">
+              <a class="footer-bottom__list-link" href="#">
+                Акции
+              </a>
+            </li>
+            <li class="footer-bottom__list-item">
+              <a class="footer-bottom__list-link" href="#">
+                Новинки
+              </a>
+            </li>
+            <li class="footer-bottom__list-item">
+              <a class="footer-bottom__list-link" href="#">
+                Лицо
+              </a>
+            </li>
+            <li class="footer-bottom__list-item">
+              <a class="footer-bottom__list-link" href="#">
+                Ванна и душ
+              </a>
+            </li>
+            <li class="footer-bottom__list-item">
+              <a class="footer-bottom__list-link" href="#">
+                Тело
+              </a>
+            </li>
+          </ul>
+          <ul class="list-reset footer-bottom__list">
+            <li class="footer-bottom__list-item">
+              <a class="footer-bottom__list-link" href="#">
+                Волосы
+              </a>
+            </li>
+            <li class="footer-bottom__list-item">
+              <a class="footer-bottom__list-link" href="#">
+                Для него
+              </a>
+            </li>
+            <li class="footer-bottom__list-item">
+              <a class="footer-bottom__list-link" href="#">
+                Подарки
+              </a>
+            </li>
+            <li class="footer-bottom__list-item">
+              <a class="footer-bottom__list-link" href="#">
+                Серии
+              </a>
+            </li>
+            <li class="footer-bottom__list-item">
+              <a class="footer-bottom__list-link" href="#">
+                Аксессуары
+              </a>
+            </li>
+          </ul>
+        </div>
+      </div>
+      <div class="footer-bottom__client">
+        <span class="subhead footer-bottom__title">
+          Для клиента
+        </span>
+        <div class="footer-bottom__list-wrapper">
+          <ul class="list-reset footer-bottom__list">
+            <li class="footer-bottom__list-item">
+              <a class="footer-bottom__list-link" href="./about-us.html">
+                О нас
+              </a>
+            </li>
+            <li class="footer-bottom__list-item">
+              <a class="footer-bottom__list-link" href="./contacts.html">
+                Контакты
+              </a>
+            </li>
+            <li class="footer-bottom__list-item">
+              <a class="footer-bottom__list-link" href="./delivery.html">
+                Доставка и оплата
+              </a>
+            </li>
+          </ul>
+          <ul class="list-reset footer-bottom__list">
+            <li class="footer-bottom__list-item">
+              <a class="footer-bottom__list-link" href="./blog.html">
+                Статьи
+              </a>
+            </li>
+            <li class="footer-bottom__list-item">
+              <a class="footer-bottom__list-link" href="./news.html">
+                Новости
+              </a>
+            </li>
+            <li class="footer-bottom__list-item">
+              <a class="footer-bottom__list-link" href="./wholesale.html">
+                Оптовикам
+              </a>
+            </li>
+          </ul>
+        </div>
+      </div>
+      <div class="footer-bottom__block">
+        <span class="footer-bottom__block-copy">
+          Copyright @ 2018-2023 Savonry.
+        </span>
+        <ul class="list-reset footer-bottom__block-list">
+          <li class="footer-bottom__block-item">
+            <picture class="footer-bottom__block-picture footer-bottom__block-paykeeper">
+              <source srcset="./images/paykeeper.webp" type="image/webp">
+              <img src="./images/paykeeper.png" alt="Логотип paykeeper" width="69" height="23">
+            </picture>
+          </li>
+          <li class="footer-bottom__block-item">
+            <picture class="footer-bottom__block-picture footer-bottom__block-mastercard">
+              <source srcset="./images/mastercard.webp" type="image/webp">
+              <img src="./images/mastercard.png" alt="Логотип mastercard" width="42" height="25">
+            </picture>
+          </li>
+          <li class="footer-bottom__block-item">
+            <picture class="footer-bottom__block-picture footer-bottom__block-visa">
+              <source srcset="./images/visa.webp" type="image/webp">
+              <img src="./images/visa.png" alt="Логотип visa" width="44" height="13">
+            </picture>
+          </li>
+          <li class="footer-bottom__block-item">
+            <picture class="footer-bottom__block-picture footer-bottom__block-mir">
+              <source srcset="./images/mir.webp" type="image/webp">
+              <img src="./images/mir.png" alt="Логотип mir" width="34" height="11">
+            </picture>
+          </li>
+        </ul>
+      </div>
+    </div>
+  </div>
+</footer>
+
+  </div>
+</body>
+</html>

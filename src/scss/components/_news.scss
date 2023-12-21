@@ -98,14 +98,11 @@
   }
 
   &__block-link {
-    display: inline-block;
     margin-top: 24px;
     font-size: 18px;
     font-weight: 400;
     line-height: normal;
   }
 
-  &__block-link-inst {
-    display: inline-block;
-  }
+  &__block-link-inst {}
 }

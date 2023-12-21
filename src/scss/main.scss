@@ -53,3 +53,10 @@
 
 // подключения компонентов страницы "Оптовикам" (wholesale.html)
 @import "./components/wholesale";
+
+// подключения компонентов страницы "Доставка и оплата" (delivery.html)
+@import "./components/delivery-payment";
+
+// подключения компонентов страницы "Контакты" (contacts.html)
+@import "./components/contacts";
+@import "./components/email-us";
