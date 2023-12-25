@@ -1,12 +1,9 @@
-// модальное окно
+// modal window
 const modal = () => {
   const btns = Array.from(document.querySelectorAll(`[data-modal]`));
   const modals = Array.from(document.querySelectorAll('.modal'));
   const inputs = document.querySelectorAll('.modal__form-input');
   const body = document.body;
-  // const header = document.querySelector('.header__container');
-  // const menu = document.querySelector('.header__nav');
-  // const burger = document.querySelector('.burger');
 
   function open(el) {
     modals.forEach(modal => {
@@ -14,16 +11,8 @@ const modal = () => {
         modal.classList.remove('modal--open');
     });
 
-    // if (menu.classList.contains('header__nav--active')) {
-    //   header.classList.remove('header__container--active');
-    //   menu.classList.remove('header__nav--active');
-    //   burger.classList.remove('burger--active');
-    // }
-
     const modalData = el.target.dataset.modal || el.target.closest(`[data-modal]`).dataset.modal;
-    // console.log(modalData);
     const modal = document.getElementById(`${modalData}`);
-    // console.log(modal);
     const modalClose = modal.querySelector('.modal__close-btn');
 
     modal.querySelectorAll('button').forEach(btn => {

@@ -1,3 +1,4 @@
+// yandex-map
 const ymaps = window.ymaps;
 
 const init = () => {

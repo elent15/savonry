@@ -1,17 +1,17 @@
 // new-products
 .new-products {
   padding-top: 120px;
-  padding-bottom: 60px;
+  padding-bottom: 57px;
   background-color: var(--white);
 
   @media (max-width:990px) {
     padding-top: 100px;
-    padding-bottom: 50px;
+    padding-bottom: 47px;
   }
 
   @media (max-width:758px) {
     padding-top: 64px;
-    padding-bottom: 32px;
+    padding-bottom: 29px;
   }
 
   &__container {
@@ -36,5 +36,6 @@
   &__swiper-slide {
     width: auto;
     height: auto;
+    padding-bottom: 3px;
   }
 }

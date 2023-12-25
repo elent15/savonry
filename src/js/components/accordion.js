@@ -1,4 +1,4 @@
-// аккордеон
+// accordion
 const accordion = () => {
   const accordions = document.querySelectorAll('.accordion');
 
@@ -14,10 +14,12 @@ const accordion = () => {
 
       if (self.classList.contains('accordion--active')) {
         trigger.setAttribute('aria-expanded', true);
+        trigger.setAttribute('aria-label', 'Закрыть');
         content.setAttribute('aria-hidden', false);
         content.style.maxHeight = content.scrollHeight + 'px';
       } else {
         trigger.setAttribute('aria-expanded', false);
+        trigger.setAttribute('aria-label', 'Открыть');
         content.setAttribute('aria-hidden', true);
         content.style.maxHeight = null;
       }

@@ -1,4 +1,4 @@
-// аккордеон
+// accordion
 const accordion = () => {
   const accordions = document.querySelectorAll('.accordion');
 
@@ -14,10 +14,12 @@ const accordion = () => {
 
       if (self.classList.contains('accordion--active')) {
         trigger.setAttribute('aria-expanded', true);
+        trigger.setAttribute('aria-label', 'Закрыть');
         content.setAttribute('aria-hidden', false);
         content.style.maxHeight = content.scrollHeight + 'px';
       } else {
         trigger.setAttribute('aria-expanded', false);
+        trigger.setAttribute('aria-label', 'Открыть');
         content.setAttribute('aria-hidden', true);
         content.style.maxHeight = null;
       }
@@ -125,15 +127,43 @@ const menu = () => {
 
 menu();
 
-// модальное окно
+// mobile-slider
+const slider = document.querySelector('.mobile-swiper');
+const mediaQuery = window.matchMedia('(max-width: 758px)')
+let mySwiper;
+
+function mobileSlider(e) {
+  if (e && slider.dataset.mobile == 'false') {
+    mySwiper = new Swiper(slider, {
+      slidesPerView: 'auto',
+      keyboard: true,
+      spaceBetween: 12
+    });
+    slider.dataset.mobile = 'true';
+  } else {
+    slider.dataset.mobile = 'false';
+
+    if (slider.classList.contains('swiper-initialized')) {
+      mySwiper.destroy();
+    }
+  }
+}
+
+if (slider) {
+  mobileSlider(mediaQuery.matches);
+
+  mediaQuery.addEventListener('change', function (e) {
+    mobileSlider(e.matches);
+  })
+}
+
+
+// modal window
 const modal = () => {
   const btns = Array.from(document.querySelectorAll(`[data-modal]`));
   const modals = Array.from(document.querySelectorAll('.modal'));
   const inputs = document.querySelectorAll('.modal__form-input');
   const body = document.body;
-  // const header = document.querySelector('.header__container');
-  // const menu = document.querySelector('.header__nav');
-  // const burger = document.querySelector('.burger');
 
   function open(el) {
     modals.forEach(modal => {
@@ -141,16 +171,8 @@ const modal = () => {
         modal.classList.remove('modal--open');
     });
 
-    // if (menu.classList.contains('header__nav--active')) {
-    //   header.classList.remove('header__container--active');
-    //   menu.classList.remove('header__nav--active');
-    //   burger.classList.remove('burger--active');
-    // }
-
     const modalData = el.target.dataset.modal || el.target.closest(`[data-modal]`).dataset.modal;
-    // console.log(modalData);
     const modal = document.getElementById(`${modalData}`);
-    // console.log(modal);
     const modalClose = modal.querySelector('.modal__close-btn');
 
     modal.querySelectorAll('button').forEach(btn => {
@@ -201,6 +223,7 @@ const modal = () => {
 
 modal();
 
+// making an order
 const order = () => {
   const orderBtn = document.querySelector('.cart__order-btn');
   const order = document.querySelector('.order');
@@ -273,6 +296,29 @@ new Swiper('.offers__swiper', {
   }
 });
 
+const productCardSwiper = new Swiper('.product-card__swiper-gallery', {
+  spaceBetween: 8,
+  slidesPerView: 'auto',
+  navigation: {
+    nextEl: '.product-card__swiper-button-next',
+    prevEl: '.product-card__swiper-button-prev',
+  },
+});
+
+new Swiper('.product-card__swiper', {
+  spaceBetween: 0,
+  thumbs: {
+    swiper: productCardSwiper,
+  },
+});
+
+new Swiper('.reviews__swiper', {
+  spaceBetween: 20,
+  slidesPerView: 'auto',
+  keyboard: true
+});
+
+// video from youtube
 const video = () => {
   const videoBtn = document.querySelector('.video__play-btn');
 
@@ -292,6 +338,7 @@ const video = () => {
 
 video();
 
+// yandex-map
 const ymaps = window.ymaps;
 
 const init = () => {

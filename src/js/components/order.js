@@ -1,3 +1,4 @@
+// making an order
 const order = () => {
   const orderBtn = document.querySelector('.cart__order-btn');
   const order = document.querySelector('.order');

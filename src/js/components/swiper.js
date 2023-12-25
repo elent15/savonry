@@ -31,3 +31,25 @@ new Swiper('.offers__swiper', {
     }
   }
 });
+
+const productCardSwiper = new Swiper('.product-card__swiper-gallery', {
+  spaceBetween: 8,
+  slidesPerView: 'auto',
+  navigation: {
+    nextEl: '.product-card__swiper-button-next',
+    prevEl: '.product-card__swiper-button-prev',
+  },
+});
+
+new Swiper('.product-card__swiper', {
+  spaceBetween: 0,
+  thumbs: {
+    swiper: productCardSwiper,
+  },
+});
+
+new Swiper('.reviews__swiper', {
+  spaceBetween: 20,
+  slidesPerView: 'auto',
+  keyboard: true
+});

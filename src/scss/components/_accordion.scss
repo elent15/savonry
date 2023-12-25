@@ -2,7 +2,8 @@
 .accordion {
   &--active {
     & .history__accordion-content,
-    & .delivery-payment__accordion-content {
+    & .delivery-payment__accordion-content,
+    & .product-card__accordion-content {
       opacity: 1;
       visibility: visible;
       max-height: 100%;
@@ -10,7 +11,8 @@
     }
 
     & .history__accordion-trigger svg,
-    & .delivery-payment__accordion-trigger svg {
+    & .delivery-payment__accordion-trigger svg,
+    & .product-card__accordion-trigger svg {
       transform: rotate(180deg);
     }
   }

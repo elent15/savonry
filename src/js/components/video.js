@@ -1,3 +1,4 @@
+// video from youtube
 const video = () => {
   const videoBtn = document.querySelector('.video__play-btn');
 

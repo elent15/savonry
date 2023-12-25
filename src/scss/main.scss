@@ -60,3 +60,16 @@
 // подключения компонентов страницы "Контакты" (contacts.html)
 @import "./components/contacts";
 @import "./components/email-us";
+
+// подключения компонентов страницы "Каталог" (catalog.html)
+@import "./components/catalog";
+
+// подключения компонентов страницы "Каталог-2" (subcatalog.html)
+@import "./components/subcatalog";
+
+// подключения компонентов страницы "Карточка товара" (card.html)
+@import "./components/product-card";
+@import "./components/reviews";
+
+// подключения компонентов страницы "Акции" (promotion.html)
+@import "./components/promotion";

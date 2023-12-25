@@ -2,7 +2,7 @@
 <div class="modal" id="modal-entrance">
   <div class="modal__bg">
     <div class="modal__body">
-      <button class="btn-reset svg-btn modal__close-btn">
+      <button class="btn-reset svg-btn modal__close-btn" type="button">
         <svg>
           <use xlink:href="./images/sprite.svg#cross"></use>
         </svg>
@@ -39,7 +39,7 @@
 <div class="modal" id="modal-recovery">
   <div class="modal__bg">
     <div class="modal__body">
-      <button class="btn-reset svg-btn modal__close-btn">
+      <button class="btn-reset svg-btn modal__close-btn" type="button">
         <svg>
           <use xlink:href="./images/sprite.svg#cross"></use>
         </svg>
@@ -68,7 +68,7 @@
 <div class="modal" id="modal-reg">
   <div class="modal__bg">
     <div class="modal__body">
-      <button class="btn-reset svg-btn modal__close-btn">
+      <button class="btn-reset svg-btn modal__close-btn" type="button">
         <svg>
           <use xlink:href="./images/sprite.svg#cross"></use>
         </svg>
@@ -104,6 +104,67 @@
         </label>
         <button class="btn-reset btn primary-btn modal__form-link" type="button" data-modal="modal-entrance">
           Продолжить
+        </button>
+      </form>
+    </div>
+  </div>
+</div>
+
+<!-- модальное окно "Написать отзыв" -->
+<div class="modal" id="modal-reviews">
+  <div class="modal__bg">
+    <div class="modal__body">
+      <button class="btn-reset svg-btn modal__close-btn" type="button">
+        <svg>
+          <use xlink:href="./images/sprite.svg#cross"></use>
+        </svg>
+      </button>
+      <div class="modal__titles-block">
+        <h3 class="third-title modal__title">
+          Оставить отзыв
+        </h3>
+      </div>
+      <form class="modal__form">
+        <label class="modal__label">
+          <input class="input modal__form-input" type="text" placeholder="Имя">
+        </label>
+        <div class="modal__form-rating-block">
+          <span class="text modal__form-rating-estimation">
+            Оцените товар
+          </span>
+          <span class="modal__form-rating">
+            <button class="btn-reset img-link modal__form-rating-btn" type="button">
+              <svg>
+                <use href="./images/sprite.svg#white-star"></use>
+              </svg>
+            </button>
+            <button class="btn-reset img-link modal__form-rating-btn" type="button">
+              <svg>
+                <use href="./images/sprite.svg#white-star"></use>
+              </svg>
+            </button>
+            <button class="btn-reset img-link modal__form-rating-btn" type="button">
+              <svg>
+                <use href="./images/sprite.svg#white-star"></use>
+              </svg>
+            </button>
+            <button class="btn-reset img-link modal__form-rating-btn" type="button">
+              <svg>
+                <use href="./images/sprite.svg#white-star"></use>
+              </svg>
+            </button>
+            <button class="btn-reset img-link modal__form-rating-btn" type="button">
+              <svg>
+                <use href="./images/sprite.svg#white-star"></use>
+              </svg>
+            </button>
+          </span>
+        </div>
+        <label class="modal__label">
+          <textarea class="input modal__form-input modal__form-textarea" placeholder="Отзыв"></textarea>
+        </label>
+        <button class="btn-reset btn primary-btn modal__form-link" type="submit">
+          Оставить отзыв
         </button>
       </form>
     </div>
