@@ -174,6 +174,11 @@ const modal = () => {
     const modalData = el.target.dataset.modal || el.target.closest(`[data-modal]`).dataset.modal;
     const modal = document.getElementById(`${modalData}`);
     const modalClose = modal.querySelector('.modal__close-btn');
+    const focus = modal.querySelector('.focus');
+
+    setTimeout(() => {
+      focus.focus();
+    }, 500)
 
     modal.querySelectorAll('button').forEach(btn => {
       btn.addEventListener('click', btn => {
