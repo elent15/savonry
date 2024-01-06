@@ -14,23 +14,23 @@
   
 #### Структура сайта
 
-* Главная страница index.html: слайдеры
-* Страницы блога blog.html и отдельной статьи article.html, страница новостей news.html
-* Страница "О нас" about-us.html: адаптивное видео 
-* Страница "Контакты" contacts.html: яндекс-карта 
-* Страница "Доставка и оплата" delivery.html: аккордеон
-* Страницы "Оптовикам" wholesale.html, "Акции" promotion.html, "Новинки" new-offers.html
+* Главная страница [index.html](https://elent15.github.io/savonry): слайдеры
+* Страницы блога [blog.html](https://elent15.github.io/savonry/blog.html) и отдельной статьи [article.html](https://elent15.github.io/savonry/article.html), страница новостей [news.html](https://elent15.github.io/savonry/news.html)
+* Страница "О нас" [about-us.html](https://elent15.github.io/savonry/about-us.html): адаптивное видео 
+* Страница "Контакты" [contacts.html](https://elent15.github.io/savonry/contacts.html): яндекс-карта 
+* Страница "Доставка и оплата" [delivery.html](https://elent15.github.io/savonry/delivery.html): аккордеон
+* Страницы "Оптовикам" [wholesale.html](https://elent15.github.io/savonry/wholesale.html), "Акции" [promotion.html](https://elent15.github.io/savonry/promotion.html), "Новинки" [new-offers.html](https://elent15.github.io/savonry/new-offers.html)
 * Страницы личного кабинета:
-  * профиль account-profile.html
-  * смена пароля account-password.html
-  * история заказов account-history.html: аккордеон
-  * e-mail рассылка account-mailing.html: кастомные радио-кнопки
-* Страница корзины cart.html и блок оформления заказа: кастомные радио-кнопки в блоке оформления заказа
-* Страница каталога "Ванна и душ" catalog.html:
+  * профиль [account-profile.html](https://elent15.github.io/savonry/account-profile.html)
+  * смена пароля [account-password.html](https://elent15.github.io/savonry/account-password.html)
+  * история заказов [account-history.html](https://elent15.github.io/savonry/account-history.html): аккордеон
+  * e-mail рассылка [account-mailing.html](https://elent15.github.io/savonry/account-mailing.html): кастомные радио-кнопки
+* Страница корзины [cart.html](https://elent15.github.io/savonry/cart.html) и блок оформления заказа: кастомные радио-кнопки в блоке оформления заказа
+* Страница каталога "Ванна и душ" [catalog.html](https://elent15.github.io/savonry/catalog.html):
   * при ширине экрана меньше 758px в блок ссылок на подкаталоги добавлен слайдер
-* Страница подкаталога "Бурлящие шарики для ванн" subcatalog.html:
+* Страница подкаталога "Бурлящие шарики для ванн" [subcatalog.html](https://elent15.github.io/savonry/subcatalog.html):
   * при ширине экрана меньше 758px в блок ссылок на подкаталоги добавлен слайдер
-* Страница товара "Набор BATH BOMB (Набор бурлящих шариков ВИШНЯ-ЧЕРНАЯ СМОРОДИНА-ВИНОГРАД), 3шт." card.html: 
+* Страница товара "Набор BATH BOMB (Набор бурлящих шариков ВИШНЯ-ЧЕРНАЯ СМОРОДИНА-ВИНОГРАД), 3шт." [card.html](https://elent15.github.io/savonry/card.html): 
   * аккордеон
   * слайдер с горизонтальным превью в блоке описания товара
   * в блоке "Отзывы" слайдер и модальное окно "Написать отзыв"
